@@ -57,19 +57,25 @@ export const Header = () => {
   return(
     <>
     <Container>
-      <Img src={churchHeader} alt='chuch'/>
-      <ContaterHeder>
-        {/* <img src={icon} alt='cross' width={30} height={30}/> */}
-        <Title>"Церква апп. Петра і Павла с. Петропавлівське"</Title>
-        <div>
-
-        </div>
-
+      <div>
+      <Title>Церква апппостолів Петра і Павла с. Петропавлівське</Title>  
+      
         {(isTablet) && (
           <Svg onClick={handleBurgerMenu}>
             <use xlinkHref={sprite + '#icon-burgermenu'} />
           </Svg>
         )} 
+            
+      </div>
+
+      <Img src={churchHeader} alt='chuch'/>
+      <ContaterHeder>
+        {/* <img src={icon} alt='cross' width={30} height={30}/> */}
+        
+        <div>
+
+        </div>
+
 
              {isOpen && <Burgermenu onClose={handleBurgerMenu} />}
 

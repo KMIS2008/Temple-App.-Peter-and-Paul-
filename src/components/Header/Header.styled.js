@@ -23,7 +23,7 @@ top:0px;
 
 display: flex;
 justify-content: space-between;
-align-items: start;
+align-items: center;
 padding: 5px 20px;
 /* background-color: ${p=>p.theme.colors.bluelight};  */
 width: 100%;
@@ -34,8 +34,9 @@ width: 100%;
 `
 export const Title=styled.h2`
 margin: 0 auto; 
+margin-bottom: 10px;
 font-family: "Dancing Script", cursive;
-font-size: 14px;
+font-size: 12px;
 color: ${p=>p.theme.colors.blue};
 text-align: center;
 
@@ -49,6 +50,9 @@ text-align: center;
 `
 
 export const Svg = styled.svg`
+display: block;
+margin-right: 0;
+margin-left: auto;
 width: 32px;
 height: 26px;
 cursor: pointer;
