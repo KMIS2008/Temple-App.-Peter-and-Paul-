@@ -1,4 +1,6 @@
-import {Container, Text, Button, Title} from './ErrorPage.styled';
+import {Container, Text, Button,
+    //  Title
+    } from './ErrorPage.styled';
 import { useNavigate } from 'react-router-dom';
 
 export default function ErrorPage(){
