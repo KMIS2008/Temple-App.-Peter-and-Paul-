@@ -23,8 +23,8 @@ top:0px;
 
 display: flex;
 justify-content: space-between;
-align-items: center;
-padding: 25px 20px;
+align-items: start;
+padding: 5px 20px;
 /* background-color: ${p=>p.theme.colors.bluelight};  */
 width: 100%;
 
@@ -35,7 +35,7 @@ width: 100%;
 export const Title=styled.h2`
 margin: 0 auto; 
 font-family: "Dancing Script", cursive;
-font-size: 16px;
+font-size: 14px;
 color: ${p=>p.theme.colors.blue};
 text-align: center;
 
