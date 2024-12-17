@@ -1,14 +1,50 @@
 import styled from "styled-components";
 
+export const Container=styled.div`
+position: relative;
+`
+
+export const Img=styled.img`
+margin: auto;
+max-width: 100%;
+
+@media (min-width:1200px) {
+    width: 1440px;
+}
+
+@media (min-width:1440px) {
+    width: 1440px;
+}
+`
+
 export const ContaterHeder = styled.div`
+position: absolute;
+top:0px;
+
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 25px 20px;
-background-color: ${props => (props.$isHome ? '#59B17A' : '#F7F8FA')}; 
+/* background-color: ${p=>p.theme.colors.bluelight};  */
+width: 100%;
 
 @media (min-width: 1440px) {
     padding: 25px 128px;
+}
+`
+export const Title=styled.h2`
+margin: 0 auto; 
+font-family: "Dancing Script", cursive;
+font-size: 16px;
+color: ${p=>p.theme.colors.blue};
+text-align: center;
+
+@media (min-width: 768px) {
+    font-size:24px;
+}
+
+@media (min-width: 1440px) {
+    font-size:30px;
 }
 `
 
@@ -16,6 +52,13 @@ export const Svg = styled.svg`
 width: 32px;
 height: 26px;
 cursor: pointer;
+@media (min-width: 768px) {
+    font-size:20px;
+}
+
+@media (min-width: 1440px) {
+    font-size:24px;
+}
 `
 
 export const ContainerSvgCart=styled.div`

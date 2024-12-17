@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const ContainerHome= styled.div` 
+width: max-content;
+height: 900px;
+background: #9ACD32;
 `
+
 export const ContainerMainBanner=styled.div`
 position: relative;
 display: flex;

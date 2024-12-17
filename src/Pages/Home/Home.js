@@ -1,4 +1,4 @@
-import {ContainerHome, ContainerMainBanner} from "./Homestyled";
+import {ContainerHome,  ContainerMainBanner} from "./Homestyled";
 import{MainBanner} from '../../components/MainBanner/MainBanner';
 import {PromoBanners} from '../../components/PromoBanners/PromoBanners';
 import {MedicineStores} from '../../components/MedicineStores/MedicineStores';
@@ -19,7 +19,8 @@ export default function Home(){
   
 return (
     <ContainerHome>
-       <ContainerMainBanner>
+ 
+       {/* <ContainerMainBanner>
          <MainBanner/>
        </ContainerMainBanner>
 
@@ -29,7 +30,7 @@ return (
 
        <AddPharmacyPromoSection/>
 
-       <ReviewsSection/>
+       <ReviewsSection/> */}
        
     </ContainerHome>
 )

@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
 
-export const Container=styled.div`
+export const Container=styled.ul`
+position: ${p=>(p.$position? "absolute" : "static")};
+bottom:10px;
+left: 10px;
 display: flex;
 flex-direction:  ${p=>p.$stylefooter||p.$styledisplay?"none":'column'}; 
 gap: ${p=>p.theme.spacing(2)};
@@ -11,16 +14,17 @@ export const Button = styled(NavLink)`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 18px;
+  padding: 10px 10px;
   border-radius: 60px;
   opacity: 0px;
   background: ${p => (p.$stylefooter ? "none" : "white")};
   background: ${p => p.$isHeader && "white"};
   border: 4px solid transparent; 
   box-sizing: border-box; 
+
   font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
   line-height: 1;
   text-align: center;
   color: ${p => (p.$stylefooter ? "white" : "#93939A")};
@@ -36,9 +40,9 @@ export const Button = styled(NavLink)`
    text-decoration: underline;
   }
 
-  &:active {
+  /* &:active {
     background: ${p => p.theme.colors.green};
     color: ${p => p.theme.colors.white};
-    border: 4px solid ${p => p.theme.colors.white}; /* Изменяем цвет границы */
-  }
+    border: 4px solid ${p => p.theme.colors.white}; 
+  } */
 `;

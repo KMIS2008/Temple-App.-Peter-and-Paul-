@@ -19,16 +19,3 @@ height: 32px;
     height: 44px;
 }
 `
-
-export const TextLogo = styled.p`
-font-family: Inter;
-font-size: 16px;
-font-weight: 600;
-line-height: 1,21;
-letter-spacing: -0.03em;
-color: ${props => (props.$isHome || props.$stylefooter? '#FFFFFF' : '#1D1E21')}; 
-
-@media (min-width: 768px) {
-font-size: 20px;
-}
-`
