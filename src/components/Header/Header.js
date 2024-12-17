@@ -59,7 +59,7 @@ export const Header = () => {
     <Container>
       <div>
       <Title>Церква апппостолів Петра і Павла с. Петропавлівське</Title>  
-      
+
         {(isTablet) && (
           <Svg onClick={handleBurgerMenu}>
             <use xlinkHref={sprite + '#icon-burgermenu'} />
@@ -75,7 +75,6 @@ export const Header = () => {
         <div>
 
         </div>
-
 
              {isOpen && <Burgermenu onClose={handleBurgerMenu} />}
 
