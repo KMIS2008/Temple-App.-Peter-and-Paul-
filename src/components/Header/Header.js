@@ -58,7 +58,7 @@ export const Header = () => {
     <>
     <Container>
       <div>
-      <Title>Церква апппостолів Петра і Павла с. Петропавлівське</Title>  
+      <Title>Церква аппостолів Петра і Павла с. Петропавлівське</Title>  
 
         {(isTablet) && (
           <Svg onClick={handleBurgerMenu}>
