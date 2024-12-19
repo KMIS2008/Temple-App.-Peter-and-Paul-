@@ -34,7 +34,7 @@ width: 100%;
 `
 export const Title=styled.h2`
 margin: 0 auto; 
-margin-bottom: 10px;
+padding-top: 10px;
 font-family: "Dancing Script", cursive;
 font-size: 12px;
 color: ${p=>p.theme.colors.blue};
@@ -45,13 +45,14 @@ text-align: center;
 }
 
 @media (min-width: 1440px) {
+    padding-bottom: 10px;
     font-size:30px;
 }
 `
 
 export const Svg = styled.svg`
 display: block;
-margin-right: 0;
+margin-right: 10px;
 margin-left: auto;
 width: 32px;
 height: 26px;

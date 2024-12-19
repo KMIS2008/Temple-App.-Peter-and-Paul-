@@ -1,5 +1,5 @@
 import {Container, Text, Button,
-    //  Title
+     Title
     } from './ErrorPage.styled';
 import { useNavigate } from 'react-router-dom';
 
@@ -12,8 +12,8 @@ export default function ErrorPage(){
     return(
         <>
         <Container>      
-            {/* <Title>404</Title> */}
-            {/* <Text>Ooops! This page not found :</Text> */}
+            <Title>404</Title> 
+             <Text>Ooops! This page not found :</Text>
             <Text>Ця сторінка ще в разроботці</Text>
             <Button type='button' onClick={handleNavigate}>To home page</Button>
         </Container>
