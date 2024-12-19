@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkonline_shop_pharmacy=self.webpackChunkonline_shop_pharmacy||[]).push([[351],{3351:function(n,e,r){r.r(e),r.d(e,{default:function(){return a}});var u=r(184);function a(){return(0,u.jsx)(u.Fragment,{})}}}]);
+//# sourceMappingURL=351.fa7872f5.chunk.js.map
