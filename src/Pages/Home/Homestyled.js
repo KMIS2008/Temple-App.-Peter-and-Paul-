@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const ContainerHome= styled.div` 
-width: max-content;
-height: 900px;
-background: #9ACD32;
+padding: 20px 20px;
+background:rgb(206, 243, 133);
 `
 
 export const ContainerMainBanner=styled.div`

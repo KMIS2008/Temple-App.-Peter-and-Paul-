@@ -2,19 +2,14 @@ import styled from "styled-components";
 
 export const Container=styled.div`
 position: relative;
+/* background: #9ACD32; */
+
 `
 
 export const Img=styled.img`
 margin: auto;
-max-width: 100%;
+width: 100%;
 
-@media (min-width:1200px) {
-    width: 1440px;
-}
-
-@media (min-width:1440px) {
-    width: 1440px;
-}
 `
 
 export const ContaterHeder = styled.div`
@@ -36,7 +31,7 @@ export const Title=styled.h2`
 margin: 0 auto; 
 padding-top: 10px;
 font-family: "Dancing Script", cursive;
-font-size: 12px;
+font-size: 14px;
 color: ${p=>p.theme.colors.blue};
 text-align: center;
 

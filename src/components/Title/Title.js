@@ -1,16 +1,13 @@
-import {Container, Title, Span} from './Title.styled';
+import {Title} from './Title.styled';
 
 
-
-export const Tittle=()=>{
+export const Tittle=({title,handleClick})=>{
     return(
-        <Container>
-            <Title> Your medication, 
-                
-                </Title>
-                
-                <Title> delivered Say goodbye to all <Span>your healthcare </Span> worries with us </Title>
 
-        </Container>
+            <Title onClick={handleClick}> 
+              {title}
+            </Title>
+                
+
     )
 }
