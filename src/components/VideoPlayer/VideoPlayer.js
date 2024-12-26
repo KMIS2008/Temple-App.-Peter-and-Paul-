@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+import churchHeader from '../../images/churcnHeader.jpg';
 
 export const VideoPlayer=()=>{
     return(
@@ -8,6 +9,17 @@ export const VideoPlayer=()=>{
                      controls 
                      width="100%"
                      height="100%"
+                     light={
+                        <img src={churchHeader} 
+                             alt='church'
+                             style={
+                                {
+                                    width:'100%',
+                                    height:'100%'
+
+                                }
+                             }
+                     />}
                      />
       </div>
     )
