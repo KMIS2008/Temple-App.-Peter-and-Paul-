@@ -64,5 +64,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "E-Pharmacy - це проект створений за допомогою Create React App для sc.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

@@ -18,7 +18,7 @@ export const SocialMediaIcons=()=>{
           <List>
               <li>
                   <a 
-                  href="https://www.facebook.com/goITclub/"
+                  href="https://www.facebook.com/profile.php?id=100077642007767"
                   target="_blank"
                   rel="noopener noreferrer"
                   onMouseEnter={() => handleMouseEnter('facebook')}
@@ -29,7 +29,7 @@ export const SocialMediaIcons=()=>{
                        </svg>
                    </a>   
               </li>
-              <li>
+              {/* <li>
                    <a 
                    href="https://www.instagram.com/goitclub/"
                    target="_blank"
@@ -54,7 +54,7 @@ export const SocialMediaIcons=()=>{
                       <use xlinkHref={sprite + (hoveredIcon === 'youtube' ? '#icon-youtube-hover' : '#icon-youtube')} />
                       </svg>
                     </a>
-              </li>
+              </li> */}
           </List>    
     )}
 

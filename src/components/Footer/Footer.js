@@ -1,47 +1,53 @@
-import { Logo } from "components/Logo/Logo";
-import {Contater, Text, Line, ContainerCopyright, CotnainerLinks, ContainerSpecial} from './Footer.styled';
-import {NavigationLinks} from '../NavigationLinks/NavigationLinks';
+import icon from '../../images/icon.jpg';
+import {Contater, ContainerLogo, Text, Title, Adress, Line, ContainerCopyright, CotnainerLinks} from './Footer.styled';
 import {FooterBottom} from '../FooterBottom/FooterBottom';
-import {FooterLinks} from '../FooterLinks/FooterLinks';
 import {SocialMediaIcons} from '../SocialMediaIcons/SocialMediaIcons';
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
 export const Footer=()=>{
-    const stylefooter=true;
-    const [isTablet, setisTablet] = useState(window.innerWidth > 768);
+    // const stylefooter=true;
+    // const [isTablet, setisTablet] = useState(window.innerWidth > 768);
 
-    useEffect(() => {
-      const handleResize = () => {
-        setisTablet(window.innerWidth > 768);
-      };
+    // useEffect(() => {
+    //   const handleResize = () => {
+    //     setisTablet(window.innerWidth > 768);
+    //   };
   
-      window.addEventListener('resize', handleResize);
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
+    //   window.addEventListener('resize', handleResize);
+    //   return () => {
+    //     window.removeEventListener('resize', handleResize);
+    //   };
+    // }, []);
 
     return(
         <Contater>
             <CotnainerLinks>
-               <div>
-                  <Logo stylefooter={stylefooter}/>
+               <ContainerLogo>
+                  <img src={icon} alt='cross' width={32} height='auto'/>
                   <Text>
-                     Get the medicine to help you feel better, 
-                     get back to your active life, and enjoy every moment.
+                    Церковь апостолів Петра і Павла
                   </Text>                
+               </ContainerLogo>
+               <div>
+                <Title>Приходьте:</Title>
+                <Adress>с. Петропавлівське вул. Молодіжна 2-а Київська область Бориспільський район</Adress>
                </div>
-               <ContainerSpecial>
-                 <NavigationLinks stylefooter={stylefooter} styledisplay={true}/>
-                 {isTablet&& <SocialMediaIcons />  }
-                 
-               </ContainerSpecial>                
+               <div>
+                <Title>Пишіть:</Title>
+                <Adress>ocu.petropavlivske@gmail.com</Adress>
+               </div>
+               <div>
+                <Title>Дзвоніть:</Title>
+                <Adress>+380-98-273-47-47</Adress>
+               </div>
+               
+                  <SocialMediaIcons /> 
+                
             </CotnainerLinks>
 
             <Line></Line>
             <ContainerCopyright>
                <FooterBottom/>
-               <FooterLinks/>                
             </ContainerCopyright>
 
         </Contater>

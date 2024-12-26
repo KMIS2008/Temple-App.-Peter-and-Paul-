@@ -9,7 +9,7 @@ import { Route, Routes } from 'react-router-dom';
 import SharedLayout from './SharedLayout/SharedLayout';
 import { useAuth } from 'hook/useAuth';
 import { refreshUser } from 'redux/auth/operations';
-import { RestrictedRoute } from './RestrictedRoute'; 
+// import { RestrictedRoute } from './RestrictedRoute'; 
 // import { PrivateRoute } from './PrivateRoute';
 
 import { lazy, Suspense  } from 'react';
@@ -25,8 +25,8 @@ const Choir=lazy(()=>import('Pages/Choir/Choir'));
 const SundaySchool=lazy(()=>import('Pages/SundaySchool/SundaySchool'));
 const Feedback=lazy(()=>import('Pages/Feedback/Feedback'));
 
-const RegisterPage= lazy(()=> import('Pages/RegisterPage/RegisterPage'));
-const LoginPage = lazy(()=> import ('Pages/LoginPage/LoginPage'));
+// const RegisterPage= lazy(()=> import('Pages/RegisterPage/RegisterPage'));
+// const LoginPage = lazy(()=> import ('Pages/LoginPage/LoginPage'));
 
 const ErrorPage = lazy(()=> import ('Pages/ErrorPage/ErrorPage'));
 
@@ -76,8 +76,8 @@ const ErrorPage = lazy(()=> import ('Pages/ErrorPage/ErrorPage'));
              <Route path='sunday-school' element={<SundaySchool/>}/>
              <Route path='feedback' element={<Feedback/>}/>
 
-             <Route path='register' element={<RegisterPage/>}/>
-             <Route path = "login" element ={<RestrictedRoute redirectTo="/" component={<LoginPage/>} />}/>
+             {/* <Route path='register' element={<RegisterPage/>}/> */}
+             {/* <Route path = "login" element ={<RestrictedRoute redirectTo="/" component={<LoginPage/>} />}/> */}
 
              <Route path="*" element={<ErrorPage/>} />
             </Route>

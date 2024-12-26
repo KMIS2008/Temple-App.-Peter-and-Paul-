@@ -4,7 +4,7 @@ import { Outlet,
 } from "react-router-dom";
 import {Contater} from './SharedLayout.styled';
 import {Header} from '../Header/Header';
-// import {Footer} from '../Footer/Footer';
+import {Footer} from '../Footer/Footer';
 
  const SharedLayout=()=>{
    //  const location= useLocation();
@@ -22,7 +22,8 @@ import {Header} from '../Header/Header';
                    <Suspense fallback={<div>Loading...</div>}>
                       <Outlet />
                    </Suspense>
-                </main>   
+                </main>  
+                <Footer/> 
            {/* {(isMain||isHome||isMedicine||isStore||isProduct) && <Footer/>} */}
         </Contater>
     )

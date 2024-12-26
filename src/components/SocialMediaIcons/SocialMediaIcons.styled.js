@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const List=styled.ul`
 display: flex;
-justify-content: end;
+justify-content: start;
+align-items: center;
 list-style: none;
 gap: 12px;
 margin-top: ${p=>p.theme.spacing(4)};
