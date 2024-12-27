@@ -7,6 +7,8 @@ margin-top: 20px;
 text-align: center;
 font-size: 28px;
 
+cursor: pointer;
+
 @media (min-width: 768px) {
     font-size: 34px;
 }
