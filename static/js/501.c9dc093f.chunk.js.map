@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/501.c9dc093f.chunk.js","mappings":"2LAAe,SAASA,IACpB,OACIC,EAAAA,EAAAA,KAAAC,EAAAA,SAAA,GAGR,C","sources":["Pages/Feedback/Feedback.js"],"sourcesContent":["export default function Feedback(){\n    return(\n        <>\n        </>\n    )\n}"],"names":["Feedback","_jsx","_Fragment"],"sourceRoot":""}
