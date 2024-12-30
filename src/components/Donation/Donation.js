@@ -1,8 +1,11 @@
 import {Text} from './Donation.styled';
+import {PayDonation} from './PayDonation';
 
 export const Donations=()=>{
     return(
     <>
+
+    <PayDonation/>
     
         <h4>Чому важливо жертвувати кошти на православну християнську церкву? </h4>
 <Text>

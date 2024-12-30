@@ -55,7 +55,7 @@ export const Header = () => {
   }, []);
 
   return(
-    <>
+  
     <Container>
       <div>
       <Title>Церква апостолів Петра і Павла с. Петропавлівське</Title>  
@@ -86,7 +86,7 @@ export const Header = () => {
 
     </Container>
 
-    </>
+  
   )
 
   // return (

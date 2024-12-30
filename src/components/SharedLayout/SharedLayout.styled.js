@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Contater = styled.div`
-width: 100%;
+width: auto;
 min-width: 320px;
 max-width: 1440px;
 margin: 0 auto;

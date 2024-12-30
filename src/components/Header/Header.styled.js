@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container=styled.div`
 position: relative;
+width: auto;
 /* background: #9ACD32; */
 
 `
