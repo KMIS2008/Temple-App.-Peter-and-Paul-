@@ -5,7 +5,8 @@ import { About } from "components/About/About";
 import {VideoPlayer} from '../../components/VideoPlayer/VideoPlayer';
 import { useNavigate } from "react-router-dom";
 import {PayDonation} from '../../components/Donation/PayDonation';
-
+import {ServiceHighlighter} from '../../components/Schedule/Schedule';
+import {Views} from '../../components/Views/Views';
 
 
 export default function Home(){
@@ -46,8 +47,6 @@ const handleClickSundaySchool=()=>{
 const handleClickFeedBack=()=>{
   navigate("/feedback")
 }
-
-
   
 return (
     <ContainerHome>
@@ -55,7 +54,7 @@ return (
         <About/>
         <Tittle handleClick={handleClickVirtual} title="Віртуальний тур"></Tittle>
         <VideoPlayer />
-        <Tittle handleClick={handleClickSchedule} title="Розклад"></Tittle>
+        <ServiceHighlighter handleClick={handleClickSchedule}/>
         <Tittle handleClick={handleClickPrayer} title="Молитва"></Tittle>        
         <Tittle handleClick={handleClickDonation} title="Пожертва"></Tittle>
         <PayDonation/>
@@ -63,6 +62,7 @@ return (
         <Tittle handleClick={handleClickChoir} title="Хор"></Tittle> 
         <Tittle handleClick={handleClickSundaySchool} title="Недільня школа"></Tittle> 
         <Tittle handleClick={handleClickFeedBack} title="Зворотній зв'язок"></Tittle> 
+        <Views/>
 
     </ContainerHome>
 )

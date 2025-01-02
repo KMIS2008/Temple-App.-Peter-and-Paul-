@@ -2,13 +2,13 @@ import { GlobalStyle } from './GlobalStyle';
 import { Audio } from 'react-loader-spinner';
 import { Navigate } from 'react-router-dom';
 
-import {useEffect } from 'react';
-import { useDispatch} from 'react-redux';
+// import {useEffect } from 'react';
+// import { useDispatch} from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 
 import SharedLayout from './SharedLayout/SharedLayout';
-import { useAuth } from 'hook/useAuth';
-import { refreshUser } from 'redux/auth/operations';
+// import { useAuth } from 'hook/useAuth';
+// import { refreshUser } from 'redux/auth/operations';
 // import { RestrictedRoute } from './RestrictedRoute'; 
 // import { PrivateRoute } from './PrivateRoute';
 
@@ -31,26 +31,27 @@ const Feedback=lazy(()=>import('Pages/Feedback/Feedback'));
 const ErrorPage = lazy(()=> import ('Pages/ErrorPage/ErrorPage'));
 
     export const App =()=> {
-      const dispatch = useDispatch();
+      // const dispatch = useDispatch();
 
-      const { isRefreshing } = useAuth();
+      // const { isRefreshing } = useAuth();
     
-      useEffect(() => {
-        dispatch(refreshUser());
+      // useEffect(() => {
+      //   dispatch(refreshUser());
     
-      }, [dispatch]);
+      // }, [dispatch]);
     
-      return isRefreshing ? (
-        <Audio
-        height="80"
-        width="80"
-        radius="9"
-        color="green"
-        ariaLabel="loading"
-        wrapperStyle
-        wrapperClass
-      />
-  ) : (
+  //     return isRefreshing ? (
+  //       <Audio
+  //       height="80"
+  //       width="80"
+  //       radius="9"
+  //       color="green"
+  //       ariaLabel="loading"
+  //       wrapperStyle
+  //       wrapperClass
+  //     />
+  // ) : (
+return (
 <div>
 <Suspense fallback={       
         <Audio
