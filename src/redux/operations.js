@@ -1,11 +1,64 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
+
 import axios from 'axios';
+import { createAsyncThunk } from "@reduxjs/toolkit";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { NotificationManager } from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
 
-axios.defaults.baseURL = "https://e-pharmacy-backend-1.onrender.com/api";
+axios.defaults.baseURL = "https://temple-app-peter-and-paul-backend.onrender.com/api";
+
+const VISIT_URL='/visits';
+
+export const fetchvisits = createAsyncThunk('visits', async(_, thunkAPI)=>{
+    try {
+        const response = await axios.get(`${VISIT_URL}`);
+        return response.data;
+        
+    } catch (e){
+        toast.error(`Error: ${e.message}`, {
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose: 5000, 
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+        return thunkAPI.rejectWithValue(e.message)
+    }
+})
+
+
+
+export const addCount = createAsyncThunk('visits/add', async(_, thunkAPI)=>{
+    try {
+        const response = await axios.post(`${VISIT_URL}`);
+    
+        return response.data;
+    } catch (e){
+        toast.error(`Error: ${e.message}`, {
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose: 5000, 
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+        return thunkAPI.rejectWithValue(e.message)
+    }
+})
+
+
+
+
+
+
+
+
+
+
 const REVIEWS_URL= '/customer-reviews';
 const NEAREST_URL='/stores/nearest'; 
 const STORES_URL='/stores'; 

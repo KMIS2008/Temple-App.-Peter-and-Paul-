@@ -2,8 +2,10 @@ import { GlobalStyle } from './GlobalStyle';
 import { Audio } from 'react-loader-spinner';
 import { Navigate } from 'react-router-dom';
 
+// import { useDispatch } from "react-redux";
+// import { fetchvisits, addCount } from "../redux/operations";
 // import {useEffect } from 'react';
-// import { useDispatch} from 'react-redux';
+
 import { Route, Routes } from 'react-router-dom';
 
 import SharedLayout from './SharedLayout/SharedLayout';
@@ -31,7 +33,33 @@ const Feedback=lazy(()=>import('Pages/Feedback/Feedback'));
 const ErrorPage = lazy(()=> import ('Pages/ErrorPage/ErrorPage'));
 
     export const App =()=> {
-      // const dispatch = useDispatch();
+      // const dispatch= useDispatch();
+ 
+
+      // useEffect(()=>{
+      //   dispatch(fetchvisits());
+    
+      // },[dispatch])
+    
+    
+      // useEffect(()=>{
+      
+      //   dispatch(addCount())
+    
+      // },[dispatch])
+
+      
+  // useEffect(()=>{
+  //   dispatch(fetchvisits());
+
+  // },[dispatch])
+
+
+  // useEffect(()=>{
+  
+  //   dispatch(addCount())
+
+  // },[dispatch])
 
       // const { isRefreshing } = useAuth();
     

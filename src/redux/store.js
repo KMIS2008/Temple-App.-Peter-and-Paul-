@@ -6,6 +6,7 @@ import {nearestReducer} from './nearest/nearestSlice';
 import {storesReducer} from './stores/storesSlices';
 import {productsReducer} from '../redux/product/productsSlice';
 import {orderReducer} from './Cart/cartSlice';
+import {visitReducer } from './visits/visitsSlince';
 
 import {
   persistStore,
@@ -34,6 +35,7 @@ export const store = configureStore({
     products: productsReducer,
     orders: orderReducer,
     finishorders:orderReducer,
+    visits:visitReducer,
   },
   
   middleware: getDefaultMiddleware =>
