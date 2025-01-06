@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { NotificationManager } from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
 
-axios.defaults.baseURL = "https://e-pharmacy-backend-1.onrender.com/api";
+axios.defaults.baseURL = "https://temple-app-peter-and-paul-backend.onrender.com/api";
 
 const setAuthHeader = token => {
     axios.defaults.headers.common.Authorization = `Bearer ${token}`;

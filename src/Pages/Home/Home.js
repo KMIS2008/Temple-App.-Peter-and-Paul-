@@ -7,28 +7,30 @@ import { useNavigate } from "react-router-dom";
 import {PayDonation} from '../../components/Donation/PayDonation';
 import {ServiceHighlighter} from '../../components/Schedule/Schedule';
 import {Views} from '../../components/Views/Views';
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchvisits, addCount } from "redux/operations";
+// import { useEffect } from "react";
+import { 
+  // useDispatch, 
+  useSelector } from "react-redux";
+// import { fetchvisits, addCount } from "redux/operations";
 import { selectCount } from "redux/visits/selects";
 
 
 
 export default function Home(){
-  const dispatch= useDispatch();
+  // const dispatch= useDispatch();
  
 
-  useEffect(()=>{
-    dispatch(fetchvisits());
+  // useEffect(()=>{
+  //   dispatch(fetchvisits());
 
-  },[dispatch])
+  // },[dispatch])
 
 
-  useEffect(()=>{
+  // useEffect(()=>{
   
-    dispatch(addCount())
+  //   dispatch(addCount())
 
-  },[dispatch])
+  // },[dispatch])
 
 const count= useSelector(selectCount);
 
