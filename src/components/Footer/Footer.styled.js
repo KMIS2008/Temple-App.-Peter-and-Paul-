@@ -48,6 +48,21 @@ text-align: left;
 
 color: ${p=>p.theme.colors.whiteblue};
 `
+
+export const LinkAdress=styled.a`
+display: flex;
+gap: 5px;
+margin-bottom: 5px;
+font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+
+color: ${p=>p.theme.colors.whiteblue};
+cursor: pointer;
+`
+
 export const Line = styled.div`
 margin-top: ${p=>p.theme.spacing(4)};
 margin-bottom: ${p=>p.theme.spacing(4)};

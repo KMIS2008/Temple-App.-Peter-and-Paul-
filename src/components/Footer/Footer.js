@@ -1,7 +1,8 @@
 import icon from '../../images/icon.jpg';
-import {Contater, ContainerLogo, Text, Title, Adress, Line, ContainerCopyright, CotnainerLinks} from './Footer.styled';
+import {Contater, ContainerLogo, Text, Title, Adress, LinkAdress, Line, ContainerCopyright, CotnainerLinks} from './Footer.styled';
 import {FooterBottom} from '../FooterBottom/FooterBottom';
 import {SocialMediaIcons} from '../SocialMediaIcons/SocialMediaIcons';
+import sprite from '../../images/sprite.svg';
 // import { useEffect, useState } from 'react';
 
 export const Footer=()=>{
@@ -31,6 +32,17 @@ export const Footer=()=>{
                <div>
                 <Title>Приходьте:</Title>
                 <Adress>с. Петропавлівське вул. Молодіжна 2-а Київська область Бориспільський район</Adress>
+        
+               <LinkAdress 
+                   href="https://www.google.com/maps?q=50.32507106782345,30.822187499999995" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                   Як доїхати
+                   <svg width={20} height={20}>
+                  <use xlinkHref={sprite + '#icon-home'} />
+                  </svg> 
+               </LinkAdress>   
+                             
                </div>
                <div>
                 <Title>Пишіть:</Title>
@@ -40,6 +52,7 @@ export const Footer=()=>{
                 <Title>Дзвоніть:</Title>
                 <Adress>+380-98-273-47-47</Adress>
                </div>
+
                
                   <SocialMediaIcons /> 
                 
