@@ -76,7 +76,7 @@ const handleClickFeedBack=()=>{
   
 return (
     <ContainerHome>
-        <Tittle handleClick={handleClickAbout} title="Про нас"></Tittle>
+       <Tittle Tittle handleClick={handleClickAbout} title="Про нас"></Tittle>
         <About/>
         <Tittle handleClick={handleClickVirtual} title="Віртуальний тур"></Tittle>
         <VideoPlayer />
