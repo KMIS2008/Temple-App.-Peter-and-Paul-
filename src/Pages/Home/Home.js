@@ -9,6 +9,7 @@ import {ServiceHighlighter} from '../../components/Schedule/Schedule';
 import {Views} from '../../components/Views/Views';
 import {TitlePart} from '../Prayer/Prayer.styled';
 import {MorningPrayers} from '../../components/MorningPrayers/MorningPrayers';
+import {EveningPrayers} from '../../components/EveningPrayers/EveningPrayers';
 import { 
   // useDispatch, 
   useSelector } from "react-redux";
@@ -60,9 +61,14 @@ const handleClickFeedBack=()=>{
 }
 
 const [showMorningPrayers, setShowMorningPrayers] = useState(false);
+const [showEverningPrayers, setShowEverningPrayers] = useState(false);
 
 const handleClickMorning=()=>{
     setShowMorningPrayers(!showMorningPrayers)
+}
+
+const handleClickEverning=()=>{
+  setShowEverningPrayers(!showEverningPrayers)
 }
 
 
@@ -78,6 +84,8 @@ return (
         <Tittle handleClick={handleClickPrayer} title="Молитва"></Tittle>   
         <TitlePart onClick={handleClickMorning}>Молитви ранкові</TitlePart>
         {showMorningPrayers && <MorningPrayers />}
+        <TitlePart onClick={handleClickEverning}>Молитви вечірні</TitlePart>
+        {showEverningPrayers&&<EveningPrayers/>}
 
         <Tittle handleClick={handleClickDonation} title="Пожертва"></Tittle>
         <PayDonation/>
