@@ -12,6 +12,9 @@ export const Container = styled.div`
   background-size: 400% 400%; /* Розширення для плавної анімації */
   animation: gradientAnimation 8s ease infinite; /* Анімація */
 
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), 
+  -5px 5px 15px rgba(0, 0, 0, 0.2); /* Тени вправо, вниз и влево */
+
   @keyframes gradientAnimation {
     0% {
       background-position: 0% 50%;

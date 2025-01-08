@@ -1,4 +1,4 @@
-import {Container, Text} from './About.styled';
+import {Container, Text, Image} from './About.styled';
 import rector from '../../images/rector.jpg';
 
 export function About(){
@@ -31,7 +31,7 @@ export function About(){
             
             </div>
             
-            <img src={rector} alt='rector of the church'/>
+            <Image src={rector} alt='rector of the church'/>
 
               </Container>
         </>
