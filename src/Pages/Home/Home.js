@@ -104,5 +104,4 @@ return (
         <Views count={count}/>
 
     </ContainerHome>
-)
-}
+)}
