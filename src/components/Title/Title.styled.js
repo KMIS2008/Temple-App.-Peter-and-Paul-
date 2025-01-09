@@ -9,6 +9,10 @@ font-size: 28px;
 
 cursor: pointer;
 
+&:hover{
+    text-decoration: underline;
+}
+
 @media (min-width: 768px) {
     font-size: 34px;
 }

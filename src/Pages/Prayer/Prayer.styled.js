@@ -7,4 +7,8 @@ padding-left: 20px;
 font-style: italic;
 
 cursor: pointer;
+
+&:hover{
+    text-decoration: underline;
+}
 `

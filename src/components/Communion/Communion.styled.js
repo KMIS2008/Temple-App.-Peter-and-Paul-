@@ -13,4 +13,10 @@ margin-bottom: 10px;
 
 export const Title = styled.h3`
 text-align: center;
+
+cursor: pointer;
+
+&:hover{
+    text-decoration: underline;
+}
 `
