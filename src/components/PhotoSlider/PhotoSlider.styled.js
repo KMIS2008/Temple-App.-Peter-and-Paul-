@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+export const ContainerSlider=styled.div`
+width: 80%;
+margin: 0 auto;
+margin-top: 20px;
+margin-bottom: 20px; 
+/* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), 
+-5px 5px 15px rgba(0, 0, 0, 0.2);  */
+`
+
 export const ContainerSVG=styled.div`
 display: flex;
 position: absolute;

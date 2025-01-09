@@ -1,12 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import storage from 'redux-persist/lib/storage';
 import { authReducer } from "./auth/authSlice";
-import {reviewsReducer} from './rewies/rewiesSlice';
-import {nearestReducer} from './nearest/nearestSlice';
-import {storesReducer} from './stores/storesSlices';
-import {productsReducer} from '../redux/product/productsSlice';
-import {orderReducer} from './Cart/cartSlice';
+// import {reviewsReducer} from './rewies/rewiesSlice';
+// import {nearestReducer} from './nearest/nearestSlice';
+// import {storesReducer} from './stores/storesSlices';
+// import {productsReducer} from '../redux/product/productsSlice';
+// import {orderReducer} from './Cart/cartSlice';
 import {visitReducer } from './visits/visitsSlince';
+import {checkReducer} from './check/checkSlice';
 
 import {
   persistStore,
@@ -29,13 +30,14 @@ const authPersistConfig = {
 export const store = configureStore({
   reducer: {
     auth: persistReducer(authPersistConfig, authReducer),
-    reviews: reviewsReducer,
-    nearest: nearestReducer,
-    stores: storesReducer,
-    products: productsReducer,
-    orders: orderReducer,
-    finishorders:orderReducer,
+    // reviews: reviewsReducer,
+    // nearest: nearestReducer,
+    // stores: storesReducer,
+    // products: productsReducer,
+    // orders: orderReducer,
+    // finishorders:orderReducer,
     visits:visitReducer,
+    check:checkReducer,
   },
   
   middleware: getDefaultMiddleware =>

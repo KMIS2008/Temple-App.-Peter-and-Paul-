@@ -9,6 +9,7 @@ import 'react-notifications/lib/notifications.css';
 axios.defaults.baseURL = "https://temple-app-peter-and-paul-backend.onrender.com/api";
 
 const VISIT_URL='/visits';
+const CHECK_URL='/check-password';
 
 export const fetchvisits = createAsyncThunk('visits', async(_, thunkAPI)=>{
     try {
@@ -49,6 +50,29 @@ export const addCount = createAsyncThunk('visits/add', async(_, thunkAPI)=>{
         return thunkAPI.rejectWithValue(e.message)
     }
 })
+
+
+export const checkPassword=createAsyncThunk('check',  async(password, thunkAPI)=>{
+    try {
+        const response = await axios.post(`${CHECK_URL}`, {password});
+    
+        return response.data;
+    } catch (e){
+        toast.error(`Error: ${e.message}`, {
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose: 5000, 
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+        return thunkAPI.rejectWithValue(e.message)
+    }
+
+}
+
+)
 
 
 

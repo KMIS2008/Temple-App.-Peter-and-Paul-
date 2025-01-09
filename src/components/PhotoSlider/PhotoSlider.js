@@ -3,10 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import sprite from '../../images/sprite.svg';
-import {ContainerSVG, SVG} from './PhotoSlider.styled';
+import {ContainerSlider, ContainerSVG, SVG} from './PhotoSlider.styled';
 
 const photos = [
-  // Массив с 30 фотографиями
   require("../../images/2.jpg"),
   require("../../images/3.jpg"),
   require("../../images/4.jpg"),
@@ -104,7 +103,7 @@ const NextArrow = ({ onClick }) => {
     };
   
     return (
-      <div style={{ width: "80%", margin: "0 auto", marginTop: "20px", marginBottom: "20px" }}>
+      <ContainerSlider>
         <Slider {...settings}>
           {photos.map((photo, index) => (
             <div key={index}>
@@ -119,6 +118,6 @@ const NextArrow = ({ onClick }) => {
             </div>
           ))}
         </Slider>
-      </div>
+      </ContainerSlider>
     );
   };
