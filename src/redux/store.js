@@ -8,6 +8,7 @@ import { authReducer } from "./auth/authSlice";
 // import {orderReducer} from './Cart/cartSlice';
 import {visitReducer } from './visits/visitsSlince';
 import {checkReducer} from './check/checkSlice';
+import {serviceReducer} from './services/serviceSlice';
 
 import {
   persistStore,
@@ -38,6 +39,7 @@ export const store = configureStore({
     // finishorders:orderReducer,
     visits:visitReducer,
     check:checkReducer,
+    services:serviceReducer,
   },
   
   middleware: getDefaultMiddleware =>

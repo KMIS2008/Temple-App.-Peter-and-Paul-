@@ -2,6 +2,8 @@ import { useForm } from "react-hook-form";
 import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import {Form, Label,Select, Textarea, Input, Span, Button} from './Services.styled';
+import { useDispatch } from "react-redux";
+import {addServices} from '../../redux/operations';
 
 const SignupSchema = Yup.object().shape({
   type: Yup.string().required("Виберіть тип послуги"),
@@ -15,11 +17,15 @@ const SignupSchema = Yup.object().shape({
 });
 
 export const ServicesForm = () => {
+  const dispatch=useDispatch();
+
   const { register, handleSubmit, reset, formState: { errors } } = useForm({
     resolver: yupResolver(SignupSchema),
   });
 
   const onSubmit = async (data) => {
+    console.log(data)
+    dispatch(addServices(data))
     try {
       const response = await fetch("https://temple-app-peter-and-paul-backend.onrender.com/api/email/send-services", {
         method: "POST",
