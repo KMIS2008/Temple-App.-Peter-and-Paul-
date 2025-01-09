@@ -25,7 +25,15 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
 `
-
+export const ContainerButton=styled.div`
+margin-top: 20px;
+@media (min-width: 768px) {
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    
+}
+`
 export const ButtonSuccess=styled.button`
 display: block;
 margin-top: 10px;

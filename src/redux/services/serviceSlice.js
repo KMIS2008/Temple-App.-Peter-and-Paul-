@@ -1,4 +1,4 @@
-import {addServices} from '../operations';
+import {addServices, fetchService} from '../operations';
 import { createSlice} from '@reduxjs/toolkit';
 
 const allServices ={
@@ -9,6 +9,12 @@ const allServices ={
 
 const handlPending = (state)=> {
     state.isLoading = true}
+
+const handlFulfilled = (state, action)=>{
+        state.services = action.payload;
+        state.isLoading = false;
+        state.error = null;
+     }
 
 const handlFulfilledAdd = (state, action)=>{
         state.services.push(action.payload);
@@ -27,7 +33,10 @@ const serviceSlice = createSlice({
        
        extraReducers:
        builder=>{
-        builder.addCase(addServices.pending, handlPending)
+        builder.addCase(fetchService.pending, handlPending)
+        .addCase(fetchService.fulfilled, handlFulfilled)
+        .addCase(fetchService.rejected, handlReject)
+        .addCase(addServices.pending, handlPending)
         .addCase(addServices.fulfilled, handlFulfilledAdd)
         .addCase(addServices.rejected, handlReject)
 

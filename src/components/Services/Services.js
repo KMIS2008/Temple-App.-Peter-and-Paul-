@@ -51,8 +51,8 @@ export const ServicesForm = () => {
       <Label htmlFor="type">Тип послуги:</Label>
       <Select id="type" {...register("type")}>
         <option value="">Оберіть тип</option>
-        <option value="За упокой">За упокой</option>
-        <option value="За здравие">За здравие</option>
+        <option value="За упокій">За упокій</option>
+        <option value="За здоров'я">За здоров'я</option>
       </Select>
       {errors.type && <p>{errors.type.message}</p>}
 
