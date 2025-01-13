@@ -98,7 +98,12 @@ padding: 10px;
 color: white;
 background:${p=>p.theme.colors.green};
 border-radius: 10px;
+
 cursor: pointer;
+
+&:hover {
+color: black;
+}
 `
 
 export const ButtonDonation = styled.button`

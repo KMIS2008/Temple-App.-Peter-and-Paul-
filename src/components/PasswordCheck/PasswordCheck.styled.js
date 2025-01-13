@@ -45,6 +45,10 @@ color: #fff;
 border: none;
 border-radius: 5px;
 cursor: pointer;
+
+&:hover{
+color: black;
+}
 `
 export const ContainerButton=styled.div`
 margin-top: 20px;
@@ -65,4 +69,8 @@ color: #fff;
 border: none;
 border-radius: 5px;
 cursor: pointer;
+
+&:hover{
+color: black;
+}
 `

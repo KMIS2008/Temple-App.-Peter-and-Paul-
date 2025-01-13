@@ -70,7 +70,8 @@ export const checkPassword=createAsyncThunk('check',  async(password, thunkAPI)=
             draggable: true,
             progress: undefined,
         });
-        return thunkAPI.rejectWithValue(e.message)
+        console.log('Ошибка в thunk:', e.response?.data?.message || e.message);
+        return thunkAPI.rejectWithValue(e.response?.data?.message || e.message);
     }
 }
 )

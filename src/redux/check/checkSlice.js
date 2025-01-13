@@ -16,10 +16,10 @@ const handlFulfilled = (state, action)=>{
     state.error = null;
  }
 
-const handlReject =(state, action)=>{
+ const handlReject = (state, action) => {
     state.isLoading = false;
-    state.error = action.payload;
-}
+    state.error = action.payload || action.error.message || 'Щось пішло не так!';
+};
 
 const checkSlice = createSlice({
     name:'check',
