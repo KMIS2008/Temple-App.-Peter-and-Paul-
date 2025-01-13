@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkonline_shop_pharmacy=self.webpackChunkonline_shop_pharmacy||[]).push([[483],{7483:function(n,e,t){t.r(e),t.d(e,{default:function(){return a}});var r=t(9400),s=t(397),u=t(184);function a(){return(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(s.p,{Tittle:!0,title:"\u041c\u043e\u043b\u0438\u0442\u0432\u0438"}),(0,u.jsx)(r.O,{})]})}}}]);
+//# sourceMappingURL=483.5f6d5581.chunk.js.map
