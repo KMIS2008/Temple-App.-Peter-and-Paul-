@@ -24,6 +24,7 @@ background: ${p=>p.theme.colors.green};
 `
 
 export const Image = styled.img`
+  margin-bottom: 60px;
   max-width: 100%;
   height: auto;
   border-radius: 8px; /* Опционально, добавляет закругленные углы */
