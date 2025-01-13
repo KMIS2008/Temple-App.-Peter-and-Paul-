@@ -87,10 +87,29 @@ export const Span=styled.span`
 color: red;
 `
 
+export const ContainerButton=styled.div`
+display: flex;
+justify-content: center;
+gap:20px;
+`
+
 export const Button = styled.button`
 padding: 10px;
 color: white;
 background:${p=>p.theme.colors.green};
 border-radius: 10px;
 cursor: pointer;
+`
+
+export const ButtonDonation = styled.button`
+padding: 10px;
+color: ${p=>p.theme.colors.green};
+border: 2px solid ${p=>p.theme.colors.green};   
+border-radius: 10px;
+cursor: pointer;
+
+&:hover{
+color: ${p=>p.theme.colors.white};
+background:${p=>p.theme.colors.green};    
+}
 `

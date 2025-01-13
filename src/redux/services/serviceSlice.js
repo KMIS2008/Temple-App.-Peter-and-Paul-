@@ -1,4 +1,4 @@
-import {addServices, fetchService} from '../operations';
+import {addServices, fetchService, deleteService} from '../operations';
 import { createSlice} from '@reduxjs/toolkit';
 
 const allServices ={
@@ -22,6 +22,10 @@ const handlFulfilledAdd = (state, action)=>{
         state.error = null;
       }
 
+const handlFulfilledDelete = (state, action)=>{
+        state.services = state.services.filter(service => service._id !== action.payload._id);
+        }
+
 const handlReject =(state, action)=>{
         state.isLoading = false;
         state.error = action.payload;
@@ -39,7 +43,9 @@ const serviceSlice = createSlice({
         .addCase(addServices.pending, handlPending)
         .addCase(addServices.fulfilled, handlFulfilledAdd)
         .addCase(addServices.rejected, handlReject)
-
+        .addCase(deleteService.pending, handlPending)
+        .addCase(deleteService.fulfilled, handlFulfilledDelete)
+        .addCase(deleteService.rejected, handlReject)
        }
 })
 

@@ -1,7 +1,12 @@
 import {Container, Iterm, Span, SpanTitle} from './AnswerService.styled';
 import sprite from '../../images/sprite.svg';
+import {deleteService} from '../../redux/operations';
+import { useDispatch } from 'react-redux';
 
 export const AnswerService = ({ services }) => {
+    const dispatch=useDispatch();
+
+
     return (
         <>
             <Container>
@@ -33,7 +38,7 @@ export const AnswerService = ({ services }) => {
 
                             </div>
 
-                            <svg width={32} height={32}>
+                            <svg width={32} height={32} onClick={()=>{dispatch(deleteService(service._id))}}>
                                 <use xlinkHref={sprite + '#icon-dump'}/>
                             </svg>
                         </Iterm>

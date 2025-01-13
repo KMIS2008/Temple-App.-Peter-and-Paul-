@@ -113,6 +113,16 @@ export const addServices=createAsyncThunk('services/add',  async(data, thunkAPI)
 )
 
 
+export const deleteService = createAsyncThunk("service/delete", async(_id, thunkAPI)=>{
+    try {
+        const response = await axios.delete(`${SERVICE_URL}/${_id}`);
+        return response.data;
+    } catch (e) {
+        return thunkAPI.rejectWithValue(e.message)
+    }
+})
+
+
 
 
 

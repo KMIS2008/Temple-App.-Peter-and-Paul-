@@ -6,8 +6,29 @@ padding: 20px;
 font-family: Arial;
 `
 
+export const PasswordWrapper = styled.div`
+    width: 35%;
+    position: relative;
+    display: flex;
+    align-items: center;
+`;
+
+export const EyeIcon = styled.div`
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: gray;
+
+    &:hover {
+        color: black;
+    }
+`;
+
 export const Input=styled.input`
+width: 100%;
 padding: 10px;
+padding-right: 50px;
 font-size: 16px;
 margin-bottom: 10px;
 border: 1px solid #ccc;

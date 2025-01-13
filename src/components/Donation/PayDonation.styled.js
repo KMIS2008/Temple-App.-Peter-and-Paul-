@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   padding: 20px;
   text-align: justify;
   border-radius: 10px;

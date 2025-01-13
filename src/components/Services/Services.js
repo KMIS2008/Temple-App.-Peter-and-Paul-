@@ -1,9 +1,10 @@
 import { useForm } from "react-hook-form";
 import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
-import {Form, Label,Select, Textarea, Input, Span, Button} from './Services.styled';
+import {Form, Label,Select, Textarea, Input, Span, ContainerButton, Button, ButtonDonation} from './Services.styled';
 import { useDispatch } from "react-redux";
 import {addServices} from '../../redux/operations';
+import { useNavigate } from "react-router-dom";
 
 const SignupSchema = Yup.object().shape({
   type: Yup.string().required("Виберіть тип послуги"),
@@ -18,6 +19,11 @@ const SignupSchema = Yup.object().shape({
 
 export const ServicesForm = () => {
   const dispatch=useDispatch();
+  const navigate=useNavigate();
+
+  const handleClickDonation=()=>{
+    navigate("/donation")
+  }
 
   const { register, handleSubmit, reset, formState: { errors } } = useForm({
     resolver: yupResolver(SignupSchema),
@@ -82,7 +88,12 @@ export const ServicesForm = () => {
       />
       {errors.phone && <p>{errors.phone.message}</p>}
 
-      <Button type="submit">Відправити</Button>
+      <ContainerButton>
+         <Button type="submit">Надіслати</Button>
+         <ButtonDonation type="button" onClick={handleClickDonation}>Пожертва</ButtonDonation>        
+      </ContainerButton>
+
+
     </Form>
   );
 };

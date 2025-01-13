@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Tittle } from "components/Title/Title";
 import { scheduleOfServices } from "../ScheduleOfServices/ScheduleOfServices";
-import {List} from './Schedule.styled';
+import {Container, List} from './Schedule.styled';
 
 export const ServiceHighlighter = ({handleClick=()=>{}}) => {
   const [currentService, setCurrentService] = useState(null);
@@ -44,7 +44,7 @@ export const ServiceHighlighter = ({handleClick=()=>{}}) => {
   }, []);
 
   return (
-    <div>
+    <Container>
       <Tittle title="Розклад богослужінь" handleClick={handleClick}/>
 
       <List>
@@ -75,6 +75,6 @@ export const ServiceHighlighter = ({handleClick=()=>{}}) => {
           );
         })}
       </List>
-    </div>
+    </Container>
   );
 };
