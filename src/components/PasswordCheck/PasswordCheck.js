@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Container, Input, ButtonCheck, ContainerButton, ButtonSuccess, PasswordWrapper, EyeIcon } from './PasswordCheck.styled';
 import { AnswerService } from '../../components/Answer/AnswerService';
 import { selectService } from 'redux/services/selects';
-import {selectFeedback} from '../../redux/feedBack/selects';
+import { selectFeedback } from '../../redux/feedBack/selects';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Импорт иконок
 import { useLocation } from 'react-router-dom'; // Импорт useLocation
 
@@ -16,7 +16,7 @@ export const PasswordCheck = () => {
     const [showPassword, setShowPassword] = useState(false);
     const [passwordValue, setPasswordValue] = useState('');
     const [showFilter, setFilter] = useState('');
-
+    const [showFeedback, setShowFeedback] = useState(false); // Добавлено состояние для отображения feedback
 
     const services = useSelector(selectService);
     const dispatch = useDispatch();
@@ -32,9 +32,12 @@ export const PasswordCheck = () => {
         dispatch(fetchFeedback());
     };
 
-
     const handleFilter = (type) => {
         setFilter(type);
+    };
+
+    const handleShowFeedback = () => {
+        setShowFeedback(true); // Устанавливаем состояние для отображения feedback
     };
 
     const filteredData = services.filter((item) => item.type.trim() === showFilter.trim());
@@ -74,14 +77,14 @@ export const PasswordCheck = () => {
 
                 {password.success && location.pathname === '/feedback' && (
                     <ContainerButton>
-                        <ButtonSuccess >
+                        <ButtonSuccess onClick={handleShowFeedback}>
                             Листи
                         </ButtonSuccess>
                     </ContainerButton>
                 )}
 
                 {showFilter && <AnswerService services={filteredData} />}
-                {feedback && <AnswerService services={feedback}/>}
+                {showFeedback && feedback && <AnswerService services={feedback} />}
             </Container>
         </>
     );
