@@ -6,6 +6,7 @@ import { Container, Input, ButtonCheck, ContainerButton, ButtonSuccess, Password
 import { AnswerService } from '../../components/Answer/AnswerService';
 import { selectService } from 'redux/services/selects';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Импорт иконок
+import { useLocation } from 'react-router-dom'; // Импорт useLocation
 
 export const PasswordCheck = () => {
     const password = useSelector(selectPassword);
@@ -14,6 +15,7 @@ export const PasswordCheck = () => {
     const [showFilter, setFilter] = useState('');
     const services = useSelector(selectService);
     const dispatch = useDispatch();
+    const location = useLocation(); // Получение текущего пути
 
     const handleInputChange = (e) => {
         setPasswordValue(e.target.value);
@@ -51,13 +53,22 @@ export const PasswordCheck = () => {
                 </PasswordWrapper>
                 <ButtonCheck onClick={handleCheckPassword}>Перевірити пароль</ButtonCheck>
 
-                {password.success && (
+                {/* Проверяем текущий путь и успешность проверки пароля */}
+                {password.success && location.pathname === '/online-services' && (
                     <ContainerButton>
                         <ButtonSuccess onClick={() => handleFilter("За здоров'я")}>
                             Записки за здоров'я
                         </ButtonSuccess>
                         <ButtonSuccess onClick={() => handleFilter("За упокій")}>
                             Записки за упокій
+                        </ButtonSuccess>
+                    </ContainerButton>
+                )}
+
+                {password.success && location.pathname === '/feedback' && (
+                    <ContainerButton>
+                        <ButtonSuccess >
+                            Листи
                         </ButtonSuccess>
                     </ContainerButton>
                 )}
