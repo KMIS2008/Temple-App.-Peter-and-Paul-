@@ -3,7 +3,7 @@ import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import {Form, Label,Select, Textarea, Input, Span, ContainerButton, Button, ButtonDonation} from './Services.styled';
 import { useDispatch } from "react-redux";
-import {addServices} from '../../redux/operations';
+import { addServices} from '../../redux/operations';
 import { useNavigate } from "react-router-dom";
 
 const SignupSchema = Yup.object().shape({

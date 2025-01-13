@@ -1,18 +1,23 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { checkPassword, fetchService } from '../../redux/operations';
+import { checkPassword, fetchFeedback, fetchService } from '../../redux/operations';
 import { selectPassword } from '../../redux/check/selects';
 import { useState } from 'react';
 import { Container, Input, ButtonCheck, ContainerButton, ButtonSuccess, PasswordWrapper, EyeIcon } from './PasswordCheck.styled';
 import { AnswerService } from '../../components/Answer/AnswerService';
 import { selectService } from 'redux/services/selects';
+import {selectFeedback} from '../../redux/feedBack/selects';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Импорт иконок
 import { useLocation } from 'react-router-dom'; // Импорт useLocation
 
 export const PasswordCheck = () => {
     const password = useSelector(selectPassword);
+    const feedback = useSelector(selectFeedback);
+
     const [showPassword, setShowPassword] = useState(false);
     const [passwordValue, setPasswordValue] = useState('');
     const [showFilter, setFilter] = useState('');
+
+
     const services = useSelector(selectService);
     const dispatch = useDispatch();
     const location = useLocation(); // Получение текущего пути
@@ -24,7 +29,9 @@ export const PasswordCheck = () => {
     const handleCheckPassword = () => {
         dispatch(checkPassword(passwordValue));
         dispatch(fetchService());
+        dispatch(fetchFeedback());
     };
+
 
     const handleFilter = (type) => {
         setFilter(type);
@@ -74,6 +81,7 @@ export const PasswordCheck = () => {
                 )}
 
                 {showFilter && <AnswerService services={filteredData} />}
+                {feedback && <AnswerService services={feedback}/>}
             </Container>
         </>
     );

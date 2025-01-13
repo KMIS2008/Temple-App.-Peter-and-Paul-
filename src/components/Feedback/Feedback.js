@@ -3,6 +3,8 @@ import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import {Form, Label, Textarea, Input, Span, ContainerButton, Button, ButtonDonation} from './Feedback.styled';
 import { useNavigate } from "react-router-dom";
+import {addFeedback} from '../../redux/operations';
+import { useDispatch } from "react-redux";
 
 
 const SignupSchema = Yup.object().shape({
@@ -16,6 +18,7 @@ const SignupSchema = Yup.object().shape({
 });
 
 export const FeedBack=()=>{
+    const dispatch=useDispatch();
 
       const navigate=useNavigate();
     
@@ -29,6 +32,7 @@ export const FeedBack=()=>{
 
 const onSubmit = async (data) => {
     console.log(data)
+    dispatch(addFeedback(data))
     reset();
 }
    

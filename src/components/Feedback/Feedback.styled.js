@@ -16,16 +16,6 @@ export const Label=styled.label`
 width: 100%;
 `
 
-export const Select=styled.select`
-margin-top: 10px;
-margin-bottom: 30px;
-width: 100%;
-height: 50px;
-border-radius: 10px;
-background: #FFFFFF;
-outline: none;
-`
-
 export const Input=styled.input`
 margin-bottom: ${p=>p.theme.spacing(6)};
 margin-top: ${p=>p.theme.spacing(2)};

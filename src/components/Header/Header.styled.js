@@ -1,16 +1,21 @@
 import styled from "styled-components";
 
 export const Container=styled.div`
+padding-top: 20px;
 position: relative;
 width: auto;
 /* background: #9ACD32; */
+`
 
+export const ContainerTitle=styled.div`
+padding-bottom: 20px;
+display: flex;
+justify-content: space-between;
 `
 
 export const Img=styled.img`
 margin: auto;
 width: 100%;
-
 `
 
 export const ContaterHeder = styled.div`
@@ -53,6 +58,7 @@ margin-left: auto;
 width: 32px;
 height: 26px;
 cursor: pointer;
+
 @media (min-width: 768px) {
     font-size:20px;
 }

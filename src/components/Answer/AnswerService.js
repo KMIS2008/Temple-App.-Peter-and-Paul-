@@ -1,10 +1,13 @@
 import {Container, Iterm, Span, SpanTitle} from './AnswerService.styled';
 import sprite from '../../images/sprite.svg';
-import {deleteService} from '../../redux/operations';
+import {deleteService, deleteFeedback} from '../../redux/operations';
 import { useDispatch } from 'react-redux';
+import { useLocation } from 'react-router-dom'; // Импорт useLocation
+
 
 export const AnswerService = ({ services }) => {
     const dispatch=useDispatch();
+    const location = useLocation(); // Получение текущего пути
 
 
     return (
@@ -20,12 +23,26 @@ export const AnswerService = ({ services }) => {
                     return (
                         <Iterm key={service._id}>
                             <div>
+
+                                {location.pathname === '/online-services' &&(
+                                    <>
                             <h4>
                                 <Span>Вид послуги: </Span> <SpanTitle>{service.type}</SpanTitle>
                             </h4>
                             <p>
                                 <Span>Ім'я: </Span> {service.fullName}
-                            </p>
+                            </p>                                
+                                </>
+                                )}
+
+                                {location.pathname === '/feedback' &&(
+                                    <>
+                            <p>
+                                <Span>Лист: </Span> {service.fullName}
+                            </p>                                
+                                </>
+                                )}
+                                
                             <p>
                                 <Span>Пошта: </Span> {service.email}
                             </p>
@@ -38,9 +55,19 @@ export const AnswerService = ({ services }) => {
 
                             </div>
 
+                            {location.pathname === '/online-services' &&(
                             <svg width={32} height={32} onClick={()=>{dispatch(deleteService(service._id))}}>
                                 <use xlinkHref={sprite + '#icon-dump'}/>
-                            </svg>
+                            </svg>                                
+                            )}
+
+                            {location.pathname === '/feedback' &&(
+                            <svg width={32} height={32} onClick={()=>{dispatch(deleteFeedback(service._id))}}>
+                                 <use xlinkHref={sprite + '#icon-dump'}/>
+                            </svg>  
+                            )}
+
+
                         </Iterm>
                     );
                 })}

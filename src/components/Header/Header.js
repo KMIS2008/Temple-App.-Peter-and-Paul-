@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 // import icon from '../../images/icon.jpg';
 import churchHeader from '../../images/churcnHeader.jpg';
-import { Container, ContaterHeder, Title, Svg, Img
+import { Container, ContainerTitle, ContaterHeder, Title, Svg, Img
   //  ContainerSvgCart, ContainerNavigate, CounterCarts 
 } from './Header.styled';
 // import { useLocation, useNavigate } from 'react-router-dom';
@@ -57,8 +57,8 @@ export const Header = () => {
   return(
   
     <Container>
-      <div>
-      <Title>Церква апостолів Петра і Павла с. Петропавлівське</Title>  
+      <ContainerTitle>
+          <Title>Церква апостолів Петра і Павла с. Петропавлівське</Title>  
 
         {(isTablet) && (
           <Svg onClick={handleBurgerMenu}>
@@ -66,7 +66,7 @@ export const Header = () => {
           </Svg>
         )} 
             
-      </div>
+      </ContainerTitle>
 
       <Img src={churchHeader} alt='chuch'/>
       <ContaterHeder>
@@ -86,7 +86,6 @@ export const Header = () => {
 
     </Container>
 
-  
   )
 
   // return (

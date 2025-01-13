@@ -10,6 +10,7 @@ import {useSelector } from "react-redux";
 import { selectCount } from "redux/visits/selects";
 import candle from '../../images/15.jpg';
 import player from '../../images/31.jpg';
+import feedback from '../../images/8.jpg';
 import { AllPrayer } from 'components/AllPrayer/AllPrayer';
 
 
@@ -83,6 +84,8 @@ return (
         <Tittle handleClick={handleClickSundaySchool} title="Недільня школа"></Tittle> 
 
         <Tittle handleClick={handleClickFeedBack} title="Зворотній зв'язок"></Tittle> 
+        <Image src={feedback} alt='sky'/> 
+
         <Views count={count}/>
 
     </ContainerHome>

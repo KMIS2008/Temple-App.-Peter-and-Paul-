@@ -1,7 +1,9 @@
+import {Container} from './Views.styled';
+
 export const Views=({count})=>{
     return(
-        <>
-          <h5>Перегдляди: {count}</h5>
-       </>
+        <Container>
+          <h4>Кількість перегдлядів: {count}</h4>
+       </Container>
     )
 }

@@ -11,6 +11,8 @@ axios.defaults.baseURL = "https://temple-app-peter-and-paul-backend.onrender.com
 const VISIT_URL='/visits';
 const CHECK_URL='/check-password';
 const SERVICE_URL='/service';
+const FEEDBACK_URL='/feedback';
+
 
 export const fetchvisits = createAsyncThunk('visits', async(_, thunkAPI)=>{
     try {
@@ -123,6 +125,54 @@ export const deleteService = createAsyncThunk("service/delete", async(_id, thunk
 })
 
 
+export const fetchFeedback = createAsyncThunk('feedback', async(_, thunkAPI)=>{
+    try {
+        const response = await axios.get(`${FEEDBACK_URL}`);
+        return response.data;
+        
+    } catch (e){
+        toast.error(`Error: ${e.message}`, {
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose: 5000, 
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+        return thunkAPI.rejectWithValue(e.message)
+    }
+})
+
+export const addFeedback=createAsyncThunk('feedback/add',  async(data, thunkAPI)=>{
+    try {
+        const response = await axios.post(`${FEEDBACK_URL}`, data);
+    
+        return response.data;
+    } catch (e){
+        toast.error(`Error: ${e.message}`, {
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose: 5000, 
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+        return thunkAPI.rejectWithValue(e.message)
+    }
+}
+)
+
+
+export const deleteFeedback = createAsyncThunk("feedback/delete", async(_id, thunkAPI)=>{
+    try {
+        const response = await axios.delete(`${FEEDBACK_URL}/${_id}`);
+        return response.data;
+    } catch (e) {
+        return thunkAPI.rejectWithValue(e.message)
+    }
+})
 
 
 
