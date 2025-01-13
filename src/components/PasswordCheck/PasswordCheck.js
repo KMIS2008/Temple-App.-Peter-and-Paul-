@@ -37,7 +37,7 @@ export const PasswordCheck = () => {
     };
 
     const handleShowFeedback = () => {
-        setShowFeedback(true); // Устанавливаем состояние для отображения feedback
+        setShowFeedback(!showFeedback); // Устанавливаем состояние для отображения feedback
     };
 
     const filteredData = services.filter((item) => item.type.trim() === showFilter.trim());

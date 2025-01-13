@@ -23,7 +23,7 @@ position: absolute;
 top:0px;
 
 display: flex;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
 padding: 5px 20px;
 /* background-color: ${p=>p.theme.colors.bluelight};  */

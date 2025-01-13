@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export const Container=styled.ul`
 position: ${p=>(p.$position? "absolute" : "static")};
 bottom:10px;
-left: 10px;
+left: 3%;
 display: flex;
 flex-direction:  ${p=>p.$stylefooter||p.$styledisplay?"none":'column'}; 
 gap: ${p=>p.theme.spacing(2)};
