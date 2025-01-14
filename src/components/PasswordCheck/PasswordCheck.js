@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { checkPassword, fetchFeedback, fetchService } from '../../redux/operations';
 import { selectPassword } from '../../redux/check/selects';
 import { useState } from 'react';
-import { Container, Input, ButtonCheck, ContainerButton, ButtonSuccess, PasswordWrapper, EyeIcon } from './PasswordCheck.styled';
+import { Container, Input, ButtonCheck, ContainerButton, ButtonSuccess, PasswordWrapper, EyeIcon, Error } from './PasswordCheck.styled';
 import { AnswerService } from '../../components/Answer/AnswerService';
 import { selectService } from 'redux/services/selects';
 import { selectFeedback } from '../../redux/feedBack/selects';
@@ -18,6 +18,7 @@ export const PasswordCheck = () => {
     const [passwordValue, setPasswordValue] = useState('');
     const [showFilter, setFilter] = useState('');
     const [showFeedback, setShowFeedback] = useState(false); // Добавлено состояние для отображения feedback
+    const [errorMessage, setErrorMessage] = useState(''); 
 
 
     const services = useSelector(selectService);
@@ -29,10 +30,14 @@ export const PasswordCheck = () => {
     };
 
     const handleCheckPassword = () => {
-   
-          dispatch(checkPassword(passwordValue)).unwrap(); // Успешный запрос
-            dispatch(fetchService());
-            dispatch(fetchFeedback());
+            setErrorMessage('');
+            dispatch(checkPassword(passwordValue))
+
+                dispatch(fetchService());
+                dispatch(fetchFeedback());
+            if (!password.success) {
+                setErrorMessage('Пароль не вірний'); }
+               
     };
 
 
@@ -47,7 +52,7 @@ export const PasswordCheck = () => {
     const filteredData = services.filter((item) => item.type.trim() === showFilter.trim());
 
     const togglePasswordVisibility = () => {
-        setShowPassword((prev) => !prev);
+        setShowPassword(!showPassword);
     };
 
 
@@ -68,9 +73,13 @@ export const PasswordCheck = () => {
                 </PasswordWrapper>
                 <ButtonCheck onClick={handleCheckPassword}>Перевірити пароль</ButtonCheck>
 
-                {!password.success && (
-    <p style={{ color: 'red', marginTop: '10px' }}>Пароль не вірний</p>
-)}
+                {errorMessage && !password.success &&(
+                    <Error>{errorMessage}</Error>
+                )}
+
+                {/* {!password.success && (
+                   <Error >Пароль не вірний</Error>
+                )} */}
 
                 {/* Проверяем текущий путь и успешность проверки пароля */}
                 {password.success && location.pathname === '/online-services' && (

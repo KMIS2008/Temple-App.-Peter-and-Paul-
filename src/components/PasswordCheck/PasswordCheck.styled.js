@@ -74,3 +74,7 @@ cursor: pointer;
 color: black;
 }
 `
+export const Error=styled.p`
+color: red;
+margin-top: 10px; 
+`
