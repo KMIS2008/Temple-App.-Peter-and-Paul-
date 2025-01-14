@@ -1,7 +1,7 @@
 import {NavigationLinks} from '../NavigationLinks/NavigationLinks';
 import {Container, CloseIcon} from './Burgermenu.styled';
 import sprite from '../../images/sprite.svg';
-import {AuthenticationLinks} from '../AuthenticationLinks/AuthenticationLinks';
+// import {AuthenticationLinks} from '../AuthenticationLinks/AuthenticationLinks';
 
 
 export const Burgermenu=({onClose})=>{
