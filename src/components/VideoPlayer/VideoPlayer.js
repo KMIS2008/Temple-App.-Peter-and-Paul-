@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import ReactPlayer from 'react-player';
+
 import church from '../../images/4.jpg';
 import {Container, ContainerPlayer, Icon, IconSpan} from './VideoPlayer.styled';
+const ReactPlayer = React.lazy(() => import('react-player'));
 
 export const VideoPlayer = () => {
   const [isPlayerVisible, setIsPlayerVisible] = useState(false);
@@ -9,6 +10,8 @@ export const VideoPlayer = () => {
   const handlePlayButtonClick = () => {
     setIsPlayerVisible(true); // Включаем плеер при нажатии
   };
+
+  
 
   return (
     <Container>
