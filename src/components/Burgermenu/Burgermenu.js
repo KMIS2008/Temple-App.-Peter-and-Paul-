@@ -14,7 +14,7 @@ export const Burgermenu=({onClose})=>{
               </CloseIcon>
 
                <NavigationLinks onClose={onClose}/>   
-               <AuthenticationLinks/>         
+               {/* <AuthenticationLinks/>          */}
 
         </Container>
     )
