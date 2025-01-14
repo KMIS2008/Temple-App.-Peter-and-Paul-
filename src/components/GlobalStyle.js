@@ -2,6 +2,16 @@ import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`
+
+@font-face {
+    font-family: 'OleksiyChekalFont'; /* Замініть на назву шрифту */
+    src: url('./fonts/OleksiyChekalFont.woff2') format('woff2'),
+         url('./fonts/OleksiyChekalFont.woff') format('woff'),
+         url('./fonts/OleksiyChekalFont.ttf') format('truetype'); /* Додайте потрібні формати */
+    font-weight: normal; /* або bold */
+    font-style: normal; /* або italic */
+}
+
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,6 +19,8 @@ export const GlobalStyle = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    font-family: 'OleksiyChekalFont', sans-serif;
   }
 
   code {
