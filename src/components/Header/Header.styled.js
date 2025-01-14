@@ -36,8 +36,8 @@ width: 100%;
 export const Title=styled.h2`
 margin: 0 auto; 
 padding-top: 10px;
-font-family: 'OleksiyChekalFont', sans-serif;
-/* font-family: "Dancing Script", cursive; */
+
+font-family: "Dancing Script", cursive;
 font-size: 14px;
 color: ${p=>p.theme.colors.blue};
 text-align: center;
