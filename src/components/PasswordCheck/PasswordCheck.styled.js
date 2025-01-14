@@ -7,10 +7,14 @@ font-family: Arial;
 `
 
 export const PasswordWrapper = styled.div`
-    width: 35%;
+    width: 70%;
     position: relative;
     display: flex;
     align-items: center;
+
+    @media (min-width: 768px) {
+        width: 35%;
+    }
 `;
 
 export const EyeIcon = styled.div`
