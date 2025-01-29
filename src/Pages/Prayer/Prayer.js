@@ -11,7 +11,6 @@ export default function Prayer(){
         <>
           <Tittle Tittle title="Молитви"></Tittle>
           <AllPrayer/>
-           
         </>
     )
 }

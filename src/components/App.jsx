@@ -37,16 +37,12 @@ const ErrorPage = lazy(()=> import ('Pages/ErrorPage/ErrorPage'));
  
 
       useEffect(()=>{
+        dispatch(addCount())
         dispatch(fetchvisits());
     
       },[dispatch])
     
     
-      useEffect(()=>{
-      
-        dispatch(addCount())
-    
-      },[dispatch])
 
 
       // const { isRefreshing } = useAuth();

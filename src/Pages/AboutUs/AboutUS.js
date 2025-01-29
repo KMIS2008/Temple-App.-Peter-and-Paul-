@@ -6,8 +6,6 @@ export default function AboutUs(){
       <>
       <Title> Про нас </Title>
      <About/>
-
-     
       </>
     )
 }
