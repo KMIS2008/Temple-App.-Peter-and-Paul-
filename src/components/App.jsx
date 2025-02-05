@@ -42,8 +42,6 @@ const ErrorPage = lazy(()=> import ('Pages/ErrorPage/ErrorPage'));
     
       },[dispatch])
     
-    
-
 
       // const { isRefreshing } = useAuth();
     

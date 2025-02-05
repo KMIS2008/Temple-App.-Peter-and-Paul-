@@ -1,16 +1,10 @@
 import styled from "styled-components";
 
 export const Container=styled.div`
-/* padding: 20px 20px; */
+
 max-width: 1440px;
 margin-bottom: 60px;
 
-
-@media (min-width: 1440px) {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
-}
 `
 
 export const Title =styled.h2`
@@ -57,8 +51,3 @@ margin-bottom: 30px;
     }
   }
 `;
-
-export const Span=styled.span`
-color: blue;
-text-decoration: underline;
-`

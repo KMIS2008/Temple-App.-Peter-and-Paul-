@@ -12,6 +12,7 @@ import candle from '../../images/15.jpg';
 import player from '../../images/31.jpg';
 import feedback from '../../images/8.jpg';
 import { AllPrayer } from 'components/AllPrayer/AllPrayer';
+import {Main} from '../../components/Main/Main';
 
 
 
@@ -58,10 +59,11 @@ const handleClickFeedBack=()=>{
 }
 
 
-  
 return (
     <ContainerHome>
-       <Tittle Tittle handleClick={handleClickAbout} title="Про нас"></Tittle>
+      <Tittle Tittle handleClick={handleClickAbout} title="Головна"></Tittle>
+      <Main/>
+       <Tittle Tittle handleClick={handleClickAbout} title="О нас"></Tittle>
         <About/>
 
         <Tittle handleClick={handleClickVirtual} title="Віртуальний тур"></Tittle>

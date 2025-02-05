@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Tittle } from "components/Title/Title";
 import { scheduleOfServices } from "../ScheduleOfServices/ScheduleOfServices";
 import {Container, List} from './Schedule.styled';
+import {TitleChapter} from './Schedule.styled';
 
 export const ServiceHighlighter = ({handleClick=()=>{}}) => {
   const [currentService, setCurrentService] = useState(null);
@@ -45,7 +46,9 @@ export const ServiceHighlighter = ({handleClick=()=>{}}) => {
 
   return (
     <Container>
-      <Tittle title="Розклад богослужінь" handleClick={handleClick}/>
+      <Tittle title="Богослужіння" handleClick={handleClick}/>
+
+      <TitleChapter>Розклад богослужінь</TitleChapter>
 
       <List>
         {scheduleOfServices.map((service) => {
@@ -75,6 +78,8 @@ export const ServiceHighlighter = ({handleClick=()=>{}}) => {
           );
         })}
       </List>
+
+      <TitleChapter>Церковні таїнства. </TitleChapter>
     </Container>
   );
 };

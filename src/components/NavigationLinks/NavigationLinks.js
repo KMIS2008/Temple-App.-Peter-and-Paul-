@@ -29,7 +29,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
     const isDonation = location.pathname === '/donation';
     const isOnlineServices = location.pathname === '/online-services';
     const isСhoir = location.pathname === '/choir';
-    const isSundaySchool = location.pathname === '/sunday-school';
+    // const isSundaySchool = location.pathname === '/sunday-school';
     const isFeedback = location.pathname === '/feedback';
 
 
@@ -84,7 +84,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                        color: isSchedule ? 'white' : '#0047AB',
                        border: isSchedule&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
-            >Розклад</Button>
+            >Богослужіння</Button>
 
             <Button $stylefooter={stylefooter} 
                    $isHeader={isHeader} 
@@ -134,7 +134,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                    }}
             > Хор</Button>
 
-            <Button $stylefooter={stylefooter} 
+            {/* <Button $stylefooter={stylefooter} 
                    $isHeader={isHeader} 
                    type="button" 
                    onClick={handleClick}
@@ -144,7 +144,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                       color: isSundaySchool ? 'white' : '#0047AB',
                       border: isSundaySchool&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
-            >Недільня школа</Button>
+            >Недільня школа</Button> */}
 
             <Button $stylefooter={stylefooter} 
                    $isHeader={isHeader} 
