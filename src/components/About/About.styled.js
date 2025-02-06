@@ -8,7 +8,7 @@ margin-bottom: 60px;
 
 @media (min-width: 1440px) {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 4fr 1fr;
     gap: 30px;
 }
 `
