@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container=styled.div`
 padding: 20px;
-background-color: rgb(231, 241, 117);
+/* background-color: rgb(229, 236, 149); */
+background-color: ${p=>(p.theme.colors.yellow)};
 `
 
 export const Title =styled.h2`

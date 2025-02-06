@@ -15,6 +15,7 @@ const theme = {
     blue:'#0047AB',
     whiteblue: '#F7F8FA',
     green: '#59B17A',
+    yellow: '#ECE595' ,
   },
 
   spacing: value => `${value * 5}px`,
