@@ -28,7 +28,6 @@ export const AllPrayer=()=>{
     return(
         <Container>
          
-
            <TitlePart onClick={handleClickMorning}>Молитви ранкові</TitlePart>
            {showMorningPrayers && <MorningPrayers />}
            <TitlePart onClick={handleClickEverning}>Молитви вечірні</TitlePart>

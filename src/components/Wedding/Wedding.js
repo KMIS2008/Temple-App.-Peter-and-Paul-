@@ -1,4 +1,4 @@
-import {Text, List} from './Wedding.styled';
+import {Text, TitleChapter, List} from './Wedding.styled';
 
 export const Wedding=()=>{
     return(
@@ -25,9 +25,9 @@ export const Wedding=()=>{
           Необхідно прийти завчасно до початку Вінчання (на 15 хвилин).
 
           </Text>
-          <Text>
+          <TitleChapter>
           Для Таїнства Вінчання необхідно мати:
-          </Text>
+          </TitleChapter>
          <List>
             <li>
                1) Головне – це віра. Наречений та наречена (чоловік та дружина) мають сповідувати християнську віру,
