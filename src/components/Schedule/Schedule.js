@@ -115,7 +115,7 @@ export const ServiceHighlighter = ({handleClick=()=>{}}) => {
         </li>
 
         <li>
-           <Link>
+           <Link to='/gathering'>
               5. Соборування - один раз на рік у Великій піст.
            </Link>          
         </li>

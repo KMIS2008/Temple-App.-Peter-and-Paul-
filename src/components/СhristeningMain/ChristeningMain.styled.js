@@ -14,3 +14,8 @@ export const Text=styled.p`
 text-indent: 30px;
 text-align: justify;
 `
+
+export const List=styled.ul`
+list-style: none;
+text-indent: 30px;
+`
