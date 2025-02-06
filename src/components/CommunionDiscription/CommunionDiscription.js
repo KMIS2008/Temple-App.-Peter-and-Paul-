@@ -1,6 +1,14 @@
-import {Text} from "./CommunionDiscription.styled";
+import {Text, Title} from "./CommunionDiscription.styled";
+import {Communion} from '../Communion/Communion';
+import { useState } from "react";
 
 export const CommunionDiscription=()=>{
+
+    const [showPrayers,setShowPrayers]=useState(false);
+    const handleClickPrayer=()=>{
+        setShowPrayers(!showPrayers)
+    }
+
     return(
         <>
         <Text>
@@ -38,6 +46,9 @@ export const CommunionDiscription=()=>{
     запивку і шматочок проскури, після чого вислухати в храмі або самому прочитати вдома по молитвослову Подячні 
     молитви після Святого Причастя.
     </Text>
+
+    <Title onClick={handleClickPrayer}> Молитовне правило до святого Причастя </Title>
+    {showPrayers&&<Communion/>}
 
         </>
     )
