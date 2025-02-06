@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/663.c3b63b12.chunk.js","mappings":"0LAAe,SAASA,IACpB,OACIC,EAAAA,EAAAA,KAAAC,EAAAA,SAAA,GAGR,C","sources":["Pages/Confession/Confession.js"],"sourcesContent":["export default function Confession(){\n    return(\n        <>\n        </>\n    )\n}"],"names":["Confession","_jsx","_Fragment"],"sourceRoot":""}
