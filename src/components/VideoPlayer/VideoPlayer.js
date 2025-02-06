@@ -23,7 +23,7 @@ export const VideoPlayer = () => {
           }}
         >
           <Icon>
-            <IconSpan style={{ color: '#fff', fontSize: '24px' }}>▶</IconSpan> {/* Иконка Play */}
+            <IconSpan>▶</IconSpan> {/* Иконка Play */}
           </Icon>
         </ContainerPlayer>
       ) : (

@@ -4,7 +4,7 @@ import church2 from '../../images/2.jpg';
 import church4 from '../../images/4.jpg';
 import church7 from '../../images/7.jpg';
 import church20 from '../../images/20.jpg';
-import church43 from '../../images/20.jpg';
+import church43 from '../../images/43.jpg';
 
 export function Main(){
     return(

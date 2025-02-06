@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container=styled.div`
 
-max-width: 1440px;
+/* max-width: 1440px; */
 margin-bottom: 60px;
 
 `
@@ -29,9 +29,11 @@ text-indent: 40px;
 }
 `
 export const Image = styled.img`
+
+margin: 0 auto;
 margin-bottom: 30px;
-  max-width: 100%;
-  height: auto;
+  max-width: auto;
+  max-height: 500px;
   border-radius: 8px; /* Опционально, добавляет закругленные углы */
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), 
               -5px 5px 15px rgba(0, 0, 0, 0.2); /* Тени вправо, вниз и влево */
