@@ -57,4 +57,3 @@ export const SocialMediaIcons=()=>{
               </li> */}
           </List>    
     )}
-
