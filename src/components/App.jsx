@@ -16,18 +16,19 @@ import SharedLayout from './SharedLayout/SharedLayout';
 
 import { lazy, Suspense  } from 'react';
 
-const Home = lazy(()=> import('Pages/Home/Home'));
-const AboutUs=lazy(()=>import('Pages/AboutUs/AboutUS'));
-const Schedule=lazy(()=>import('Pages/Schedule/Schedule'));
-const VirtualTour=lazy(()=>import('Pages/VirtualTour/VirtualTour'));
-const Prayer=lazy(()=>import('Pages/Prayer/Prayer'));
-const Donation=lazy(()=>import('Pages/Donation/Donation'));
-const OnlineServices=lazy(()=>import('Pages/OnlineServices/OnlineServices'));
-const Choir=lazy(()=>import('Pages/Choir/Choir'));
-const SundaySchool=lazy(()=>import('Pages/SundaySchool/SundaySchool'));
-const Feedback=lazy(()=>import('Pages/Feedback/Feedback'));
-const Christening=lazy(()=>import('Pages/Сhristening/Сhristening'));
-const Confession=lazy(()=>import('Pages/Confession/Confession'));
+const Home = lazy(()=> import('Pages/HomePage/HomePage'));
+const AboutUsPage=lazy(()=>import('Pages/AboutUsPage/AboutUsPage'));
+const SchedulePage=lazy(()=>import('Pages/SchedulePage/SchedulePage'));
+const VirtualTourPage=lazy(()=>import('Pages/VirtualTourPage/VirtualTourPage'));
+const PrayerPage=lazy(()=>import('Pages/PrayerPage/PrayerPage'));
+const DonationPage=lazy(()=>import('Pages/DonationPage/DonationPage'));
+const OnlineServicesPage=lazy(()=>import('Pages/OnlineServicesPage/OnlineServicesPage'));
+const ChoirPage=lazy(()=>import('Pages/ChoirPage/ChoirPage'));
+const SundaySchoolPage=lazy(()=>import('Pages/SundaySchoolPage/SundaySchoolPage'));
+const FeedbackPage=lazy(()=>import('Pages/FeedbackPage/FeedbackPage'));
+const ChristeningPage=lazy(()=>import('Pages/СhristeningPage/СhristeningPage'));
+const ConfessionPage=lazy(()=>import('Pages/ConfessionPage/ConfessionPage'));
+const CommunionPage=lazy(()=>import ('Pages/CommunionPage/CommunionPage'));
 
 // const RegisterPage= lazy(()=> import('Pages/RegisterPage/RegisterPage'));
 // const LoginPage = lazy(()=> import ('Pages/LoginPage/LoginPage'));
@@ -79,17 +80,18 @@ return (
              <Route path = "/" element = {<SharedLayout/>}>
              <Route index element={<Navigate to="/home" />} />
              <Route path="home" element={<Home/>}/>
-             <Route path="about-us" element={<AboutUs/>} />
-             <Route path="schedule" element={<Schedule/>}/>
-             <Route path="virtual-tour" element={<VirtualTour/>}/>
-             <Route path="prayer" element={<Prayer/>}/>
-             <Route path="donation" element={<Donation/>}/>
-             <Route path="online-services" element={<OnlineServices/>}/>
-             <Route path='choir' element={<Choir/>}/>
-             <Route path='sunday-school' element={<SundaySchool/>}/>
-             <Route path='feedback' element={<Feedback/>}/>
-             <Route path='christening' element={<Christening/>}/>
-             <Route path='confession' element={<Confession/>}/>
+             <Route path="about-us" element={<AboutUsPage/>} />
+             <Route path="schedule" element={<SchedulePage/>}/>
+             <Route path="virtual-tour" element={<VirtualTourPage/>}/>
+             <Route path="prayer" element={<PrayerPage/>}/>
+             <Route path="donation" element={<DonationPage/>}/>
+             <Route path="online-services" element={<OnlineServicesPage/>}/>
+             <Route path='choir' element={<ChoirPage/>}/>
+             <Route path='sunday-school' element={<SundaySchoolPage/>}/>
+             <Route path='feedback' element={<FeedbackPage/>}/>
+             <Route path='christening' element={<ChristeningPage/>}/>
+             <Route path='confession' element={<ConfessionPage/>}/>
+             <Route path='communion' element={<CommunionPage/>}/>
 
              {/* <Route path='register' element={<RegisterPage/>}/> */}
              {/* <Route path = "login" element ={<RestrictedRoute redirectTo="/" component={<LoginPage/>} />}/> */}

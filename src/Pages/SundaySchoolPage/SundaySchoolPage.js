@@ -1,6 +1,6 @@
 import {AboutChoir} from '../../components/AboutChoir/AboutChoir';
 
-export default function SundaySchool(){
+export default function SundaySchoolPage(){
     return(
         <>
         <AboutChoir/>

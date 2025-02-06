@@ -1,7 +1,7 @@
 import {ChristeningMain} from '../../components/СhristeningMain/ChristeningMain';
-import {Container} from './Christening.styled';
+import {Container} from './ChristeningPage.styled';
  
-export default function Christening(){
+export default function ChristeningPage(){
   return(
     <Container>
         <ChristeningMain/>

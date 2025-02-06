@@ -1,9 +1,9 @@
 import {VideoPlayer} from '../../components/VideoPlayer/VideoPlayer';
 import {Tittle} from '../../components/Title/Title';
 import {PhotoSlider} from '../../components/PhotoSlider/PhotoSlider';
-import { Container } from './VirtualTour.styled';
+import { Container } from './VirtualTourPage.styled';
 
-export default function VirtualTour(){
+export default function VirtualTourPage(){
     return(
         <Container>
              <Tittle title="Віртуальний тур"/>

@@ -1,7 +1,7 @@
 import {AboutChoir} from '../../components/AboutChoir/AboutChoir';
-import { Container } from './Choir.styled';
+import { Container } from './ChoirPage.styled';
 
-export default function Choir(){
+export default function ChoirPage(){
     return(
         <Container>
            <AboutChoir/>

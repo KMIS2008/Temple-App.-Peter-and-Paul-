@@ -1,7 +1,7 @@
 import {ServiceHighlighter} from '../../components/Schedule/Schedule';
-import { Container } from './Schedules.styled';
+import { Container } from './SchedulesPage.styled';
 
-export default function Schedule(){
+export default function SchedulePage(){
     return(
         <Container>
            <ServiceHighlighter/>

@@ -1,9 +1,9 @@
 import {AllPrayer} from '../../components/AllPrayer/AllPrayer';
 import { Tittle } from 'components/Title/Title';
-import { Container } from './Prayer.styled';
+import { Container } from './PrayerPage.styled';
 
 
-export default function Prayer(){
+export default function PrayerPage(){
 
 
     return(

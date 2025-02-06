@@ -1,4 +1,4 @@
-import {ContainerHome, Image} from "./Homestyled";
+import {ContainerHome, Image} from "./HomePage.styled";
 import {Tittle} from '../../components/Title/Title';
 import { About } from "components/About/About";
 import {VideoPlayer} from '../../components/VideoPlayer/VideoPlayer';
@@ -13,7 +13,6 @@ import player from '../../images/31.jpg';
 import feedback from '../../images/8.jpg';
 import { AllPrayer } from 'components/AllPrayer/AllPrayer';
 import {Main} from '../../components/Main/Main';
-
 
 
 export default function Home(){
