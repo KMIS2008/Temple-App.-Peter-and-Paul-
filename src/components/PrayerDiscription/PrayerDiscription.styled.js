@@ -25,7 +25,7 @@ text-align: justify;
 `
 
 export const Span=styled.span`
-margin-bottom: 100px;
+margin-bottom: 10px;
 font-style: italic;
 text-align: justify;
 `
