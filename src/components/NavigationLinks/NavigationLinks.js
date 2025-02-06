@@ -31,6 +31,8 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
     const isСhoir = location.pathname === '/choir';
     // const isSundaySchool = location.pathname === '/sunday-school';
     const isFeedback = location.pathname === '/feedback';
+    const isWedding=location.pathname === '/wedding';
+    const isChristening =location.pathname === '/christening';
 
 
     return(
@@ -73,6 +75,30 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                        border: isVirtualTour&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
             >Віртуальний тур</Button>
+
+                <Button $stylefooter={stylefooter} 
+                   $isHeader={isHeader} 
+                   type="button" 
+                   onClick={handleClick}
+                   to="/wedding"
+                   style={{
+                       backgroundColor: isWedding ? '#59B17A' : 'white',
+                       color: isWedding ? 'white' : '#0047AB',
+                       border: isWedding&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
+                   }}
+            >Вінчання</Button>
+
+            <Button $stylefooter={stylefooter} 
+                   $isHeader={isHeader} 
+                   type="button" 
+                   onClick={handleClick}
+                   to="/christening"
+                   style={{
+                       backgroundColor: isChristening ? '#59B17A' : 'white',
+                       color: isChristening ? 'white' : '#0047AB',
+                       border: isChristening&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
+                   }}
+            >Хрещення</Button>
 
             <Button $stylefooter={stylefooter} 
                    $isHeader={isHeader} 
