@@ -26,6 +26,8 @@ const OnlineServices=lazy(()=>import('Pages/OnlineServices/OnlineServices'));
 const Choir=lazy(()=>import('Pages/Choir/Choir'));
 const SundaySchool=lazy(()=>import('Pages/SundaySchool/SundaySchool'));
 const Feedback=lazy(()=>import('Pages/Feedback/Feedback'));
+const Christening=lazy(()=>import('Pages/Сhristening/Сhristening'));
+const Confession=lazy(()=>import('Pages/Confession/Confession'));
 
 // const RegisterPage= lazy(()=> import('Pages/RegisterPage/RegisterPage'));
 // const LoginPage = lazy(()=> import ('Pages/LoginPage/LoginPage'));
@@ -86,6 +88,8 @@ return (
              <Route path='choir' element={<Choir/>}/>
              <Route path='sunday-school' element={<SundaySchool/>}/>
              <Route path='feedback' element={<Feedback/>}/>
+             <Route path='christening' element={<Christening/>}/>
+             <Route path='confession' element={<Confession/>}/>
 
              {/* <Route path='register' element={<RegisterPage/>}/> */}
              {/* <Route path = "login" element ={<RestrictedRoute redirectTo="/" component={<LoginPage/>} />}/> */}

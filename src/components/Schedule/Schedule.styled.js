@@ -9,5 +9,7 @@ list-style: none;
 `
 
 export const TitleChapter=styled.h2`
+margin-top: 20px;
+margin-bottom: 20px;
 text-align: center;
 `
