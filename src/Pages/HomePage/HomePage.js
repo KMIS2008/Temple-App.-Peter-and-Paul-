@@ -11,6 +11,7 @@ import { selectCount } from "redux/visits/selects";
 import candle from '../../images/15.jpg';
 import player from '../../images/31.jpg';
 import feedback from '../../images/8.jpg';
+import choir from '../../images/Choir.jpg';
 import { AllPrayer } from 'components/AllPrayer/AllPrayer';
 import {Main} from '../../components/Main/Main';
 
@@ -49,9 +50,9 @@ const handleClickChoir=()=>{
   navigate("/choir")
 }
 
-const handleClickSundaySchool=()=>{
-  navigate("/sunday-school")
-}
+// const handleClickSundaySchool=()=>{
+//   navigate("/sunday-school")
+// }
 
 const handleClickFeedBack=()=>{
   navigate("/feedback")
@@ -81,8 +82,9 @@ return (
         <Image src={candle} alt='candle'/> 
 
         <Tittle handleClick={handleClickChoir} title="Хор"></Tittle> 
+        <Image src={choir} alt="choir"/>
 
-        <Tittle handleClick={handleClickSundaySchool} title="Недільня школа"></Tittle> 
+        {/* <Tittle handleClick={handleClickSundaySchool} title="Недільня школа"></Tittle>  */}
 
         <Tittle handleClick={handleClickFeedBack} title="Зворотній зв'язок"></Tittle> 
         <Image src={feedback} alt='sky'/> 
