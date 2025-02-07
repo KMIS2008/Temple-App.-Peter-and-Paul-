@@ -34,10 +34,31 @@ width: 100%;
 }
 `
 export const Title=styled.h2`
+ font-family: 'Ancient Kyiv', sans-serif;
 margin: 0 auto; 
 padding-top: 10px;
 
-font-family: "Dancing Script", cursive;
+/* font-family: "Dancing Script", cursive; */
+font-size: 14px;
+color: ${p=>p.theme.colors.blue};
+text-align: center;
+
+@media (min-width: 768px) {
+    font-size:24px;
+}
+
+@media (min-width: 1440px) {
+    padding-bottom: 10px;
+    font-size:30px;
+}
+`
+
+export const TitleSecond=styled.h2`
+font-family: 'Rutenia', sans-serif;
+margin: 0 auto; 
+padding-top: 10px;
+
+/* font-family: "Dancing Script", cursive; */
 font-size: 14px;
 color: ${p=>p.theme.colors.blue};
 text-align: center;

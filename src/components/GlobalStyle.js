@@ -3,6 +3,19 @@ import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`
 
+@font-face {
+  font-family: 'Ancient Kyiv';
+  src: url('../../public/fonts/Ancient_Kyiv_1d6ee2b0-351a-4c2c-a89a-4de96309e5aa.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rutenia';
+  src: url('../../public/fonts/Rutenia2008VasylChebanyk.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
   body {
     margin: 0;

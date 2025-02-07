@@ -9,4 +9,10 @@ export const Title=styled.h3`
 margin: 0 auto;
 margin-top: 20px;
 margin-bottom: 20px;
+
+cursor: pointer;
+
+&:hover{
+    text-decoration: underline;
+}
 `

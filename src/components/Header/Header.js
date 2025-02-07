@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 // import icon from '../../images/icon.jpg';
 import churchHeader from '../../images/churcnHeader.jpg';
-import { Container, ContainerTitle, ContaterHeder, Title, Svg, Img
+import { Container, ContainerTitle, ContaterHeder, Title, Svg, Img, TitleSecond
   //  ContainerSvgCart, ContainerNavigate, CounterCarts 
 } from './Header.styled';
 // import { useLocation, useNavigate } from 'react-router-dom';
@@ -58,7 +58,8 @@ export const Header = () => {
   
     <Container>
       <ContainerTitle>
-          <Title>Церква апостолів Петра і Павла с. Петропавлівське</Title>  
+          <Title>Церква апостолів Петра і Павла с. Петропавлівське</Title> 
+          <TitleSecond>Церква апостолів Петра і Павла с. Петропавлівське</TitleSecond>  
 
         {(isTablet) && (
           <Svg onClick={handleBurgerMenu}>
