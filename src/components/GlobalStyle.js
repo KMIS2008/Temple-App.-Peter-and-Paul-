@@ -80,4 +80,24 @@ button {
 .no-scroll {
   overflow: hidden;
 }
+
+@media print {
+  /* Скрываем все элементы на странице */
+  body * {
+    visibility: hidden;
+  }
+  /* Делаем видимым только содержимое контейнера с id "printableArea" */
+  #printableArea, #printableArea * {
+    visibility: visible;
+  }
+  /* Убираем отступы и позиционируем контент для печати */
+  #printableArea {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
 `
+
+

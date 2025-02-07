@@ -82,3 +82,18 @@ export const Error=styled.p`
 color: red;
 margin-top: 10px; 
 `
+
+export const PrintIconWrapper = styled.div`
+  margin-top: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #007BFF; /* основной цвет иконки */
+  transition: color 0.3s ease, transform 0.3s ease;
+  
+  &:hover {
+    color: #0056b3; /* цвет при наведении */
+    transform: scale(1.1); /* лёгкое увеличение */
+  }
+`;

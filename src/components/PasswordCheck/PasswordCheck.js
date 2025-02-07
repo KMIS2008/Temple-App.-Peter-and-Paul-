@@ -2,11 +2,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { checkPassword, fetchFeedback, fetchService } from '../../redux/operations';
 import { selectPassword } from '../../redux/check/selects';
 import { useState } from 'react';
-import { Container, Input, ButtonCheck, ContainerButton, ButtonSuccess, PasswordWrapper, EyeIcon, Error } from './PasswordCheck.styled';
+import { Container, Input, ButtonCheck, ContainerButton, ButtonSuccess, PasswordWrapper, EyeIcon, Error, PrintIconWrapper } from './PasswordCheck.styled';
 import { AnswerService } from '../../components/Answer/AnswerService';
 import { selectService } from 'redux/services/selects';
 import { selectFeedback } from '../../redux/feedBack/selects';
-import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Импорт иконок
+import { FaEye, FaEyeSlash, FaPrint  } from 'react-icons/fa'; // Импорт иконок
 import { useLocation } from 'react-router-dom'; // Импорт useLocation
 
 export const PasswordCheck = () => {
@@ -53,6 +53,11 @@ export const PasswordCheck = () => {
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
+
+      // Функция для печати
+  const handlePrint = () => {
+    window.print();
+  };
 
 
     return (
@@ -105,13 +110,27 @@ export const PasswordCheck = () => {
                 {password.success && location.pathname === '/feedback' && (
                     <ContainerButton>
                         <ButtonSuccess onClick={handleShowFeedback}>
-                            Листи
+                        Листи
                         </ButtonSuccess>
                     </ContainerButton>
                 )}
 
-                {showFilter && <AnswerService services={filteredData} />}
-                {showFeedback && feedback && <AnswerService services={feedback} />}
+              {(showFilter || showFeedback) && (
+                <div id="printableArea">
+                    {showFilter && <AnswerService services={filteredData} />}
+                    {showFeedback && feedback && <AnswerService services={feedback} />}
+                </div>
+               )}
+
+                {/* {showFilter && <AnswerService services={filteredData} />}
+                {showFeedback && feedback && <AnswerService services={feedback} />} */}
+
+                {/* Если пароль введён правильно и отображаются данные, показываем иконку печати */}
+        {password.success && (showFilter || showFeedback) && (
+          <PrintIconWrapper onClick={handlePrint}>
+            <FaPrint size={24} style={{ cursor: 'pointer' }} />
+          </PrintIconWrapper>
+        )}
             </Container>
         </>
     );
