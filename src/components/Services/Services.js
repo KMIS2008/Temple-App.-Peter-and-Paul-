@@ -32,6 +32,7 @@ export const ServicesForm = () => {
   const onSubmit = async (data) => {
     console.log(data)
     dispatch(addServices(data))
+
     try {
       const response = await fetch("https://temple-app-peter-and-paul-backend.onrender.com/api/email/send-services", {
         method: "POST",
@@ -56,9 +57,12 @@ export const ServicesForm = () => {
     <Form onSubmit={handleSubmit(onSubmit)}>
       <Label htmlFor="type">Тип послуги:</Label>
       <Select id="type" {...register("type")}>
-        <option value="">Оберіть тип</option>
-        <option value="За упокій">За упокій</option>
-        <option value="За здоров'я">За здоров'я</option>
+        <option value="">Замовити</option>
+        <option value="За упокій">записка за упокій</option>
+        <option value="За здоров'я">записка за здоров’я</option>
+        <option value="сорокоуст за здоров’я">сорокоуст за здоров’я</option>
+        <option value="сорокоуст за упокій">сорокоуст за упокій</option>
+        <option value="молебень на здоров’я та іншу потребу">молебень на здоров’я та іншу потребу</option>
       </Select>
       {errors.type && <p>{errors.type.message}</p>}
 
@@ -92,7 +96,6 @@ export const ServicesForm = () => {
          <Button type="submit">Надіслати</Button>
          <ButtonDonation type="button" onClick={handleClickDonation}>Пожертва</ButtonDonation>        
       </ContainerButton>
-
 
     </Form>
   );

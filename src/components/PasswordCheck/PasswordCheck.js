@@ -37,7 +37,6 @@ export const PasswordCheck = () => {
                 dispatch(fetchFeedback());
             if (!password.success) {
                 setErrorMessage('Пароль не вірний'); }
-               
     };
 
 
@@ -90,6 +89,16 @@ export const PasswordCheck = () => {
                         <ButtonSuccess onClick={() => handleFilter("За упокій")}>
                             Записки за упокій
                         </ButtonSuccess>
+                        <ButtonSuccess onClick={() => handleFilter("сорокоуст за здоров’я")}>
+                        Сорокоуст за здоров’я
+                        </ButtonSuccess>
+                        <ButtonSuccess onClick={() => handleFilter("сорокоуст за упокій")}>
+                        Сорокоуст за упокій
+                        </ButtonSuccess>
+                        <ButtonSuccess onClick={() => handleFilter("молебень на здоров’я та іншу потребу")}>
+                        Молебень на здоров’я та іншу потребу
+                        </ButtonSuccess>
+
                     </ContainerButton>
                 )}
 
