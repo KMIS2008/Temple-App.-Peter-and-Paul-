@@ -5,21 +5,11 @@ padding: 20px 20px;
 background:rgb(217, 242, 166);
 `
 
-export const ContainerMainBanner=styled.div`
-position: relative;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-height: 812px;
-background: ${p=>p.theme.colors.green};
-
-@media (min-width: 768px) {
-    height: 1024px;
-}
-
+export const Container=styled.div`
 @media (min-width: 1440px) {
-    height: 800px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 30px;
 }
 `
 

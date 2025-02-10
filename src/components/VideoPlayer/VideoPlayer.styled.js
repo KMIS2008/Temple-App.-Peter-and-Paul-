@@ -12,7 +12,7 @@ margin-bottom: 70px;
 export const ContainerPlayer=styled.div`
             position: relative;
             width: 100%;
-            padding-top: 56.25%; /* Соотношение сторон 16:9 */
+            padding-top: 500px; /* Соотношение сторон 16:9 */
          
             background-size: cover;
             background-position: center;

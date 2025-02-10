@@ -31,7 +31,7 @@ export const VideoPlayer = () => {
           url="video.mp4"
           controls
           width="100%"
-          height="100%"
+          height="500px"
         />
       )}
     </Container>

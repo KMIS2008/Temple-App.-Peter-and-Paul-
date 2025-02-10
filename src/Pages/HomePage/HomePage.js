@@ -61,15 +61,22 @@ const handleClickFeedBack=()=>{
 
 return (
     <ContainerHome>
-      <Tittle Tittle handleClick={handleClickAbout} title="Головна"></Tittle>
-      <Main/>
-       <Tittle Tittle handleClick={handleClickAbout} title="О нас"></Tittle>
-        <About/>
+   
+         <Tittle Tittle handleClick={handleClickAbout} title="Головна"></Tittle>
+         <Main/>
+        {/* <Container> */}
+          {/* <div> */}
+            <Tittle Tittle handleClick={handleClickAbout} title="О нас"></Tittle>
+            <About/>            
+          {/* </div>
+          <div> */}
+            <Tittle handleClick={handleClickSchedule} title="Богослужіння"></Tittle>
+            <ServiceHighlighter />
+          {/* </div>              */}
+       {/* </Container> */}
 
         <Tittle handleClick={handleClickVirtual} title="Віртуальний тур"></Tittle>
         <VideoPlayer />
-
-        <ServiceHighlighter handleClick={handleClickSchedule}/>
 
         <Tittle handleClick={handleClickPrayer} title="Молитви"></Tittle>
         <AllPrayer/>
