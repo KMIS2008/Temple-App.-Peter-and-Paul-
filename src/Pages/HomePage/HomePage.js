@@ -9,11 +9,11 @@ import {SacramentsHome} from '../../components/Schedule/SacramentsHome';
 import {Views} from '../../components/Views/Views';
 import {useSelector } from "react-redux";
 import { selectCount } from "redux/visits/selects";
-import candle from '../../images/15.jpg';
+// import candle from '../../images/15.jpg';
 import player from '../../images/31.jpg';
-import feedback from '../../images/8.jpg';
-import choir from '../../images/Choir.jpg';
-import { AllPrayer } from 'components/AllPrayer/AllPrayer';
+// import feedback from '../../images/8.jpg';
+// import choir from '../../images/Choir.jpg';
+// import { AllPrayer } from 'components/AllPrayer/AllPrayer';
 import {Main} from '../../components/Main/Main';
 import { InfoModal } from "components/Modal/Modal";
 import { useEffect, useState } from "react";
@@ -47,21 +47,21 @@ const handleClickDonation=()=>{
   navigate("/donation")
 }
 
-const handleClickOnlineServices=()=>{
-  navigate("/online-services")
-}
+// const handleClickOnlineServices=()=>{
+//   navigate("/online-services")
+// }
 
-const handleClickChoir=()=>{
-  navigate("/choir")
-}
+// const handleClickChoir=()=>{
+//   navigate("/choir")
+// }
 
 // const handleClickSundaySchool=()=>{
 //   navigate("/sunday-school")
 // }
 
-const handleClickFeedBack=()=>{
-  navigate("/feedback")
-}
+// const handleClickFeedBack=()=>{
+//   navigate("/feedback")
+// }
 
 useEffect(()=>{
   setModal(true)
@@ -88,22 +88,22 @@ return (
         <VideoPlayer />
 
         <Tittle handleClick={handleClickPrayer} title="Молитви"></Tittle>
-        <AllPrayer/>
+        {/* <AllPrayer/> */}
         <Image src={player} alt="player"/>
 
         <Tittle handleClick={handleClickDonation} title="Пожертва"></Tittle>
         <PayDonation/>
 
-        <Tittle handleClick={handleClickOnlineServices} title="Онлайн Послуги"></Tittle>
+        {/* <Tittle handleClick={handleClickOnlineServices} title="Онлайн Послуги"></Tittle>
         <Image src={candle} alt='candle'/> 
 
         <Tittle handleClick={handleClickChoir} title="Хор"></Tittle> 
-        <Image src={choir} alt="choir"/>
+        <Image src={choir} alt="choir"/> */}
 
         {/* <Tittle handleClick={handleClickSundaySchool} title="Недільня школа"></Tittle>  */}
 
-        <Tittle handleClick={handleClickFeedBack} title="Зворотній зв'язок"></Tittle> 
-        <Image src={feedback} alt='sky'/> 
+        {/* <Tittle handleClick={handleClickFeedBack} title="Зворотній зв'язок"></Tittle> 
+        <Image src={feedback} alt='sky'/>  */}
 
         <Views count={count}/>
 
