@@ -11,6 +11,7 @@ background-color: ${props => (props.theme.colors.green)};
 `
 
 export const ContainerLogo=styled.div`
+margin-right: 20px;
 display: flex;
 align-items: center;
 gap:10px;
@@ -18,8 +19,9 @@ gap:10px;
 export const Text = styled.p`
 margin-top: ${p=>p.theme.spacing(4)};
 margin-bottom: ${p=>p.theme.spacing(4)};
+
 font-family: Inter;
-font-size: 12px;
+font-size: 18px;
 font-weight: 400;
 line-height: 18px;
 text-align: left;
@@ -30,7 +32,7 @@ color: ${p=>p.theme.colors.whiteblue};
 export const Title=styled.h6`
 margin-bottom: 5px;
 font-family: Inter;
-font-size: 16px;
+font-size: 22px;
 font-weight: 400;
 line-height: 18px;
 text-align: left;
@@ -41,7 +43,7 @@ color: ${p=>p.theme.colors.whiteblue};
 export const Adress=styled.p`
 margin-bottom: 10px;
 font-family: Inter;
-font-size: 12px;
+font-size: 18px;
 font-weight: 400;
 line-height: 18px;
 text-align: left;
@@ -54,7 +56,7 @@ display: flex;
 gap: 5px;
 margin-bottom: 5px;
 font-family: Inter;
-font-size: 20px;
+font-size: 22px;
 font-weight: 400;
 line-height: 18px;
 text-align: left;
@@ -85,7 +87,7 @@ export const CotnainerLinks=styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:10px;
+    gap:20px;
 }
 `
 export const ContainerSpecial = styled.div`

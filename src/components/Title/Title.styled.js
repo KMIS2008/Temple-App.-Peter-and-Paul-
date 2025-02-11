@@ -6,6 +6,7 @@ margin-bottom: 20px;
 margin-top: 20px;
 text-align: center;
 font-size: 28px;
+color: ${p=>p.theme.colors.red};
 text-shadow: -2px -2px 0px rgb(231, 251, 48), 2px 2px 0px rgb(41, 198, 223);
 
 cursor: pointer;

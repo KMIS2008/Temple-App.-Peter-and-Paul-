@@ -24,7 +24,7 @@ export const SocialMediaIcons=()=>{
                   onMouseEnter={() => handleMouseEnter('facebook')}
                   onMouseLeave={handleMouseLeave}
                   >
-                       <svg width={44} height={44}>
+                       <svg width={70} height={70}>
                            <use xlinkHref={sprite + (hoveredIcon === 'facebook' ? '#icon-facebook-hover' : '#icon-facebook')} />
                        </svg>
                    </a>   

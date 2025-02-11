@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
 export const Container=styled.div`
-
+padding-left:20px;
+padding-right: 30px;
 /* max-width: 1440px; */
 margin-bottom: 60px;
+`
 
+export const ContainerText=styled.div`
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap:40px;
 `
 
 export const Title =styled.h2`

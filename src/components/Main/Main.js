@@ -1,22 +1,23 @@
-import {Container, Text, Image} from './Mainstyled';
+import {Container, ContainerText, Text, Image} from './Mainstyled';
 
 import church2 from '../../images/2.jpg';
 import church4 from '../../images/4.jpg';
-import church7 from '../../images/7.jpg';
-import church20 from '../../images/20.jpg';
+// import church7 from '../../images/7.jpg';
+// import church20 from '../../images/20.jpg';
 import church43 from '../../images/43.jpg';
 
 export function Main(){
     return(
         <>
         <Container>
-     
+            <ContainerText> 
                 <Text>
                 ХРАМ – це складна рукотворна святиня, яка у земних формах символічно зображує неземне, у видимих – невидиме.
                 </Text>
 
-                <Image src={church2} alt='church'/>
-                
+                <Image src={church2} alt='church'/>                
+            </ContainerText>
+             
                 <Text> 
                 Умовно кожен православний храм поділяється на три основних частини: притвор, середню частину та
                  вівтар. Три частини – символ Триєдиного Бога. Трьохскладова будова храму відома ще з часів Старого
@@ -24,14 +25,16 @@ export function Main(){
                   на схід, де сходить сонце, це символізує Божественне Світло, рай.
                 </Text>
 
-                <Image src={church4} alt='church'/>
-        
+                {/* <Image src={church4} alt='church'/> */}
+
+                <ContainerText> 
                 <Text>За формою побудови храми бувають хрестоподібними, що нагадує нам про Хрест Христовий і наше спасіння; 
                     круглими, що не мають ні початку, ні кінця та символізують вічність Церкви. Найдревнішою формою 
                     православного храму є «корабель» – символ ковчега спасіння, а найпоширенішою – хрестово-купольна.
                 </Text>    
 
-                <Image src={church7} alt='church'/>
+                <Image src={church4} alt='church'/>
+                </ContainerText>
 
                 <Text>
                 У вертикальній площині храм являв собою образ видимого світу, верхня частина якого означала Небо, тож храмовий купол, 
@@ -41,12 +44,13 @@ export function Main(){
                 Божественну славу, а цибулиноподібна форма куполу символізує полум’я свічки.
                 </Text>
 
-                <Image src={church20} alt='church'/>
+                {/* <Image src={church20} alt='church'/> */}
 
                 <Text>
                 В українській мові синонімом слова "купол" виступає "баня".
                 </Text>
 
+                <ContainerText> 
                 <Text>
                 Варто відзначити, що все це – не догма, а шанована віками традиція. Будь-який храм – це особливе місце присутності 
                 Божої, в ньому ми через богослужіння й Таїнства отримуємо ту животворну божественну благодать, яка дарується 
@@ -55,6 +59,7 @@ export function Main(){
                 </Text>
 
                 <Image src={church43} alt='church'/>
+                </ContainerText>
 
               </Container>
         </>
