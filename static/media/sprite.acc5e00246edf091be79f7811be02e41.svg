@@ -2,9 +2,9 @@
 <defs>
 
 <symbol id="icon-burgermenu" viewBox="0 0 39 32">
-<path fill="none" stroke="#0047AB" style="stroke: var(--color3, #0047AB)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M34.877 16.255h-29.538"></path>
-<path fill="none" stroke="#0047AB" style="stroke: var(--color3, #0047AB)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M34.877 9.855h-29.538"></path>
-<path fill="none" stroke="#0047AB" style="stroke: var(--color3, #0047AB)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M34.877 22.655h-29.538"></path>
+<path fill="none" stroke="#69221d" style="stroke: var(--color3, #69221d)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M34.877 16.255h-29.538"></path>
+<path fill="none" stroke="#69221d" style="stroke: var(--color3, #69221d)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M34.877 9.855h-29.538"></path>
+<path fill="none" stroke="#69221d" style="stroke: var(--color3, #69221d)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4615" d="M34.877 22.655h-29.538"></path>
 </symbol>
 
 <symbol id="icon-burgermenu-green" viewBox="0 0 39 32">
