@@ -92,11 +92,9 @@ const getDayOfYear = () => {
   
   const getQuoteForToday = () => {
     const dayOfYear = getDayOfYear(); // число от 1 до 365 (или 366)
-    console.log(dayOfYear)
     // Если массив DayFrankness имеет ровно 365 объектов, то индекс будем брать как:
     // (номер дня - 1) для дней с 1 по 365. Если день 366, можно сделать циклически:
     const index = (dayOfYear - 1) % DayFrankness.length;
-    console.log(index)
     return DayFrankness[index].text;
   };
 

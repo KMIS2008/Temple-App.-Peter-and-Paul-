@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 // import icon from '../../images/icon.jpg';
 import churchHeader from '../../images/churcnHeader.jpg';
-import { Container, ContainerTitle, ContaterHeder, Title, Svg, Img, TitleSecond
+import { Container, ContainerTitle, ContainerTitleHeader, ContaterHeder, Title, Svg, Img,ImgHeader
   //  ContainerSvgCart, ContainerNavigate, CounterCarts 
 } from './Header.styled';
 // import { useLocation, useNavigate } from 'react-router-dom';
@@ -9,6 +9,7 @@ import sprite from '../../images/sprite.svg';
 
 import { Burgermenu } from 'components/Burgermenu/Burgermenu';
 import { NavigationLinks } from 'components/NavigationLinks/NavigationLinks';
+import cross from '../../images/18-removebg-preview.png';
 // import {User} from '../User/User';
 
 // import { AuthenticationLinks } from 'components/AuthenticationLinks/AuthenticationLinks';
@@ -58,8 +59,13 @@ export const Header = () => {
   
     <Container>
       <ContainerTitle>
+
+        <ImgHeader src={cross} alt='cross'/>
+        
+        <ContainerTitleHeader>
           <Title>Церква апостолів Петра і Павла с. Петропавлівське</Title> 
-          <TitleSecond>Церква апостолів Петра і Павла с. Петропавлівське</TitleSecond>  
+          <Title>Православна церква України</Title>           
+        </ContainerTitleHeader>
 
         {(isTablet) && (
           <Svg onClick={handleBurgerMenu}>
@@ -73,9 +79,6 @@ export const Header = () => {
       <ContaterHeder>
         {/* <img src={icon} alt='cross' width={30} height={30}/> */}
         
-        <div>
-
-        </div>
 
              {isOpen && <Burgermenu onClose={handleBurgerMenu} />}
 
