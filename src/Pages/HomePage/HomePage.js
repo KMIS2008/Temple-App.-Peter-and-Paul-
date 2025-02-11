@@ -14,9 +14,13 @@ import feedback from '../../images/8.jpg';
 import choir from '../../images/Choir.jpg';
 import { AllPrayer } from 'components/AllPrayer/AllPrayer';
 import {Main} from '../../components/Main/Main';
+import { InfoModal } from "components/Modal/Modal";
+import { useEffect, useState } from "react";
 
 
 export default function Home(){
+
+  const [isModal, setModal]=useState(false)
   
   const count= useSelector(selectCount);
 
@@ -58,6 +62,9 @@ const handleClickFeedBack=()=>{
   navigate("/feedback")
 }
 
+useEffect(()=>{
+  setModal(true)
+},[])
 
 return (
     <ContainerHome>
@@ -97,6 +104,8 @@ return (
         <Image src={feedback} alt='sky'/> 
 
         <Views count={count}/>
+
+        <InfoModal isModal={isModal} setModal={setModal}/>
 
     </ContainerHome>
 )}
