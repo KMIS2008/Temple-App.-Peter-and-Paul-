@@ -16,6 +16,7 @@ import player from '../../images/31.jpg';
 // import { AllPrayer } from 'components/AllPrayer/AllPrayer';
 import {Main} from '../../components/Main/Main';
 import { InfoModal } from "components/Modal/Modal";
+import {Contacts} from 'components/Contacts/Contacts';
 import { useEffect, useState } from "react";
 
 
@@ -104,6 +105,9 @@ return (
 
         {/* <Tittle handleClick={handleClickFeedBack} title="Зворотній зв'язок"></Tittle> 
         <Image src={feedback} alt='sky'/>  */}
+
+        <Tittle title="Контакти"></Tittle>
+        <Contacts/>
 
         <Views count={count}/>
 

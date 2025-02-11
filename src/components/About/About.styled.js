@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container=styled.div`
-padding: 0 20px;
 /* max-width: 1440px; */
 margin-bottom: 60px;
 
@@ -35,9 +34,8 @@ text-indent: 40px;
 }
 `
 export const Image = styled.img`
-
 margin: 0 auto;
-margin-bottom: 30px;
+/* margin-bottom: 30px; */
   max-width: auto;
   max-height: 450px;
   border-radius: 8px; /* Опционально, добавляет закругленные углы */

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerHome= styled.div` 
-padding: 20px 20px;
+padding: 20px 40px;
 background:rgb(217, 242, 166);
 `
 

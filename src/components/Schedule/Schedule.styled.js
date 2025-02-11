@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-padding: 0 20px;
 margin-bottom: 60px;
 font-size: 24px;
 `
@@ -15,4 +14,3 @@ margin-top: 20px;
 margin-bottom: 20px;
 text-align: center;
 `
-
