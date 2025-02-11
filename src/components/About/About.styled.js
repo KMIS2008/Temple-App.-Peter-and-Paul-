@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container=styled.div`
-/* padding: 20px 20px; */
+padding: 0 20px;
 /* max-width: 1440px; */
 margin-bottom: 60px;
 
 
 @media (min-width: 1440px) {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 30px;
 }
 `

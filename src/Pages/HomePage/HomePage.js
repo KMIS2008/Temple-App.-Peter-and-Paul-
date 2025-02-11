@@ -1,10 +1,11 @@
 import {ContainerHome, Image} from "./HomePage.styled";
 import {Tittle} from '../../components/Title/Title';
-import { About } from "components/About/About";
+import { AboutSecond } from "components/About/AboutSecond";
 import {VideoPlayer} from '../../components/VideoPlayer/VideoPlayer';
 import { useNavigate } from "react-router-dom";
 import {PayDonation} from '../../components/Donation/PayDonation';
 import {ServiceHighlighter} from '../../components/Schedule/Schedule';
+import {SacramentsHome} from '../../components/Schedule/SacramentsHome';
 import {Views} from '../../components/Views/Views';
 import {useSelector } from "react-redux";
 import { selectCount } from "redux/visits/selects";
@@ -73,12 +74,13 @@ return (
          <Main/>
         {/* <Container> */}
           {/* <div> */}
-            <Tittle Tittle handleClick={handleClickAbout} title="О нас"></Tittle>
-            <About/>            
+            <Tittle Tittle handleClick={handleClickAbout} title="Про нас"></Tittle>
+            <AboutSecond/>            
           {/* </div>
           <div> */}
             <Tittle handleClick={handleClickSchedule} title="Богослужіння"></Tittle>
             <ServiceHighlighter />
+            <SacramentsHome/>
           {/* </div>              */}
        {/* </Container> */}
 

@@ -62,7 +62,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                        color: isAboutUsActive ? 'white' : '#0047AB',
                        border: isAboutUsActive&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
-            > О нас</Button>
+            > Про нас</Button>
 
            <Button $stylefooter={stylefooter} 
                    $isHeader={isHeader} 

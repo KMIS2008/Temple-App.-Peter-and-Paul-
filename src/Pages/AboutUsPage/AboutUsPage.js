@@ -4,7 +4,7 @@ import { About } from 'components/About/About';
 export default function AboutUsPage(){
     return(
       <Container>
-         <Title> О нас </Title>
+         <Title> Про нас </Title>
          <About/>
       </Container>
     )

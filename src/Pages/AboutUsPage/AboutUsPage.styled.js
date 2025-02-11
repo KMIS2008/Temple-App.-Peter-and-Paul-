@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container=styled.div`
-padding: 20px;
+padding: 40px;
 /* background-color: rgb(229, 236, 149); */
 background-color: ${p=>(p.theme.colors.yellow)};
 `
