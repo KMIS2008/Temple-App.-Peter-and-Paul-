@@ -13,3 +13,16 @@ margin-bottom: 10px;
 export const SpanText=styled.span`
 font-style: italic;
 `
+
+export const Text=styled.p`
+text-align: justify;
+text-indent: 30px;
+line-height: 1.5;
+
+/* br::after {
+    content: "";
+    display: inline-block;
+    width: 30px; 
+  } */
+
+`

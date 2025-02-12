@@ -96,6 +96,12 @@ button {
     width: 100%;
   }
 }
+
+br {
+  display: block;
+  margin-left: 20px;
+
+}
 `
 
 

@@ -17,6 +17,13 @@ const theme = {
     green: '#59B17A',
     yellow: '#ECE595' ,
     red:"#69221d",
+    morning:"rgba(255, 153, 102, 0.7)",
+    evening:"rgba(72, 61, 139, 1)",
+    allprayers:"rgba(102, 51, 153, 1)"
+
+  //   morning: "rgba(217,166,140,1)",
+  // evening: "rgba(80,114,119,1)",
+  // allprayers: "rgba(71,102,133,1)"
   },
 
   spacing: value => `${value * 5}px`,

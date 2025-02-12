@@ -7,6 +7,7 @@ export const Text=styled.p`
 margin-bottom: 10px;
 text-align: justify;
 text-indent: 40px;
+line-height: 1.5;
 `
 
 export const List=styled.ul`
