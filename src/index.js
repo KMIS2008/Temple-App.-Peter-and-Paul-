@@ -18,7 +18,7 @@ const theme = {
     yellow: '#ECE595' ,
     red:"#69221d",
     morning:"rgba(255, 153, 102, 0.7)",
-    evening:"rgba(72, 61, 139, 1)",
+    evening:"rgba(72, 61, 139, 0.4)",
     allprayers:"rgba(102, 51, 153, 1)"
 
   //   morning: "rgba(217,166,140,1)",

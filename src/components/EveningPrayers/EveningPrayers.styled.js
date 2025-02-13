@@ -13,3 +13,9 @@ margin-bottom: 10px;
 export const SpanText=styled.span`
 font-style: italic;
 `
+
+export const Text=styled.p`
+text-align: justify;
+text-indent: 30px;
+line-height: 1.5;
+`
