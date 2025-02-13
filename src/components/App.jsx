@@ -33,6 +33,7 @@ const WeddingPage=lazy(()=>import('Pages/WeddingPage/WeddingPage'));
 const GatheringPage=lazy(()=>import('Pages/GatheringPage/GatheringPage'));
 const MorningPrayersPages=lazy(()=>import('Pages/MorningPrayersPages/MorningPrayersPages'));
 const EveningPrayerPages=lazy(()=>import('Pages/EveningPrayerPages/EveningPrayerPages'));
+const PrayerForUkranePages=lazy(()=>import('Pages/PrayerForUkranePages/PrayerForUkranePages'));
 
 
 // const RegisterPage= lazy(()=> import('Pages/RegisterPage/RegisterPage'));
@@ -101,6 +102,7 @@ return (
              <Route path='gathering' element={<GatheringPage/>}/>
              <Route path='morning-prayer' element={<MorningPrayersPages/>}/>
              <Route path='evening-prayer' element={<EveningPrayerPages/>}/>
+             <Route path='for-ukraine-prayer' element={<PrayerForUkranePages/>}/>
 
              {/* <Route path='register' element={<RegisterPage/>}/> */}
              {/* <Route path = "login" element ={<RestrictedRoute redirectTo="/" component={<LoginPage/>} />}/> */}
