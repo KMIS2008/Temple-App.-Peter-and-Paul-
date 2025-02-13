@@ -1,40 +1,26 @@
 import { useState } from 'react';
 import {Communion} from '../Communion/Communion';
-import {Container, TitlePart} from './AllPrayer.styled';
-import {PrayerAllNeeds} from '../PrayerAllNeeds/PrayerAllNeeds';
-import { Link } from 'react-router-dom';
-
+import {Container, TitlePart, LinkPrayer} from './AllPrayer.styled';
 
 export const AllPrayer=()=>{
 
     const [showCommunionPrayers, setShowCommunionPrayers] = useState(false);
-    const [showPrayerAllNeeds, setShowPrayerAllNeeds] = useState(false);
 
   const handleClickCommunion=()=>{
     setShowCommunionPrayers(!showCommunionPrayers)
 }
 
-
-const handleClickPrayerAllNeeds=()=>{
-    setShowPrayerAllNeeds(!showPrayerAllNeeds)
-}
-
-
     return(
         <Container>
          
-           <Link to={'/morning-prayer'}>Молитви ранкові</Link>
+           <LinkPrayer to={'/morning-prayer'}>Молитви ранкові</LinkPrayer>
 
-           <Link to={'/evening-prayer'}> Молитви вечірні</Link>
+           <LinkPrayer to={'/evening-prayer'}> Молитви вечірні</LinkPrayer>
 
-           <Link to={'/for-ukraine-prayer'}>Молитви за Україну </Link>
+           <LinkPrayer to={'/for-ukraine-prayer'}>Молитви за Україну </LinkPrayer>
+
+           <LinkPrayer to={'/all-needs'}> Молитви на всяку потребу </LinkPrayer>
         
-
-
-        
-
-           <TitlePart onClick={handleClickPrayerAllNeeds} > Молитви на всяку потребу.</TitlePart>
-           {showPrayerAllNeeds&&<PrayerAllNeeds/>}
 
            <TitlePart onClick={handleClickCommunion}>Молитовне правило до св. Причастя</TitlePart>
            {showCommunionPrayers&&<Communion/>}
