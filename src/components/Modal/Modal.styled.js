@@ -21,8 +21,7 @@ cursor: pointer;
 export const Title =styled.h1`
 margin-top: ${p=>p.theme.spacing(5)};
 margin-bottom: ${p=>p.theme.spacing(5)};
-font-family: 'Rutenia', sans-serif;
-font-size: 32px;
+font-family: 'Chronicle', sans-serif;
 font-weight: 600;
 line-height: 1,43;
 text-align: center;
@@ -31,10 +30,10 @@ color: #1D1E21;
 
 export const Text=styled.p`
 margin-bottom: ${p=>p.theme.spacing(4)};
-font-family: 'Rutenia', sans-serif;
-font-size: 30px;
+font-family: 'Chronicle', sans-serif;
+font-size: 35px;
 font-weight: 400;
-line-height: 1,29;
+line-height: 1,1;
 text-align: justify;
 color:rgb(4, 75, 28);
 white-space:normal ; /* Allow text to wrap to the next line */
@@ -88,6 +87,8 @@ padding: 5px;
 border: 2px solid ${p=>(p.theme.colors.green)};
 border-radius: 10px;
 background: ${p => p.$audioPlaying ? p.theme.colors.green : p.theme.colors.yellow};
+font-family: 'Rutenia', sans-serif;
+text-align: center;
 
 cursor: pointer;
 `
