@@ -2,7 +2,7 @@ import {ContainerHome, Image} from "./HomePage.styled";
 import {Tittle} from '../../components/Title/Title';
 import { AboutSecond } from "components/About/AboutSecond";
 import {VideoPlayer} from '../../components/VideoPlayer/VideoPlayer';
-import { useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import {PayDonation} from '../../components/Donation/PayDonation';
 import {ServiceHighlighter} from '../../components/Schedule/Schedule';
 import {SacramentsHome} from '../../components/Schedule/SacramentsHome';
@@ -16,8 +16,8 @@ import player from '../../images/31.jpg';
 // import { AllPrayer } from 'components/AllPrayer/AllPrayer';
 import {Main} from '../../components/Main/Main';
 import { InfoModal } from "components/Modal/Modal";
-import {Contacts} from 'components/Contacts/Contacts';
 import { useEffect, useState } from "react";
+import { Contacts } from "components/Contacts/Contacts";
 
 
 export default function Home(){
@@ -26,43 +26,6 @@ export default function Home(){
   
   const count= useSelector(selectCount);
 
-  const navigate= useNavigate();
-
-  const handleClickAbout=()=>{
-    navigate("/about-us")
-  }
-
-  const handleClickVirtual=()=>{
-    navigate("/virtual-tour")
-  }
-
-const handleClickSchedule=()=>{
-  navigate("/schedule")
-}
-
-const handleClickPrayer=()=>{
-  navigate("/prayer")
-}
-
-const handleClickDonation=()=>{
-  navigate("/donation")
-}
-
-// const handleClickOnlineServices=()=>{
-//   navigate("/online-services")
-// }
-
-// const handleClickChoir=()=>{
-//   navigate("/choir")
-// }
-
-// const handleClickSundaySchool=()=>{
-//   navigate("/sunday-school")
-// }
-
-// const handleClickFeedBack=()=>{
-//   navigate("/feedback")
-// }
 
 useEffect(()=>{
   setModal(true)
@@ -71,43 +34,38 @@ useEffect(()=>{
 return (
     <ContainerHome>
    
-         <Tittle Tittle handleClick={handleClickAbout} title="Головна"></Tittle>
-         <Main/>
-        {/* <Container> */}
-          {/* <div> */}
-            <Tittle Tittle handleClick={handleClickAbout} title="Про нас"></Tittle>
-            <AboutSecond/>            
-          {/* </div>
-          <div> */}
-            <Tittle handleClick={handleClickSchedule} title="Богослужіння"></Tittle>
-            <ServiceHighlighter />
-            <SacramentsHome/>
-          {/* </div>              */}
-       {/* </Container> */}
+        <Tittle  title="Головна"></Tittle>
+        <Main />
+          
+        <Link to={'/about-us'}>
+             <Tittle title="Про нас"></Tittle>
+        </Link>
+        <AboutSecond />   
+    
+        <Link to={'/schedule'}>
+             <Tittle title="Богослужіння"></Tittle>
+        </Link>
+        <ServiceHighlighter />
+        <SacramentsHome/>
 
-        <Tittle handleClick={handleClickVirtual} title="Віртуальний тур"></Tittle>
+        <Link to={'/virtual-tour'}>
+             <Tittle title="Віртуальний тур"></Tittle>
+        </Link>
         <VideoPlayer />
-
-        <Tittle handleClick={handleClickPrayer} title="Молитви"></Tittle>
-        {/* <AllPrayer/> */}
+    
+        <Link to={'/prayer'}>
+             <Tittle title="Молитви"></Tittle>
+        </Link>
         <Image src={player} alt="player"/>
 
-        <Tittle handleClick={handleClickDonation} title="Пожертва"></Tittle>
+        <Link to={'/donation'}>
+             <Tittle title="Пожертва"></Tittle>
+        </Link>
         <PayDonation/>
 
-        {/* <Tittle handleClick={handleClickOnlineServices} title="Онлайн Послуги"></Tittle>
-        <Image src={candle} alt='candle'/> 
-
-        <Tittle handleClick={handleClickChoir} title="Хор"></Tittle> 
-        <Image src={choir} alt="choir"/> */}
-
-        {/* <Tittle handleClick={handleClickSundaySchool} title="Недільня школа"></Tittle>  */}
-
-        {/* <Tittle handleClick={handleClickFeedBack} title="Зворотній зв'язок"></Tittle> 
-        <Image src={feedback} alt='sky'/>  */}
-
-        <Tittle title="Контакти"></Tittle>
-        <Contacts/>
+       <Tittle title="Контакти"></Tittle>
+       <Contacts/>
+        
 
         <Views count={count}/>
 

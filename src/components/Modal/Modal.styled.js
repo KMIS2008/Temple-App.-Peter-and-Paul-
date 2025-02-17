@@ -9,12 +9,14 @@ export const SvgButton = styled.div`
 display: block;
 position:absolute;
 right: 0; top: 0;
-border: none;
 margin-left: auto;
+
 
 cursor: pointer;
 &:hover{
-    background: #3F945F;
+    background: ${p => p.theme.colors.yellow};
+    border: 1px solid ${p => p.theme.colors.red};
+    border-radius: 5px;
 }
 `
 
@@ -25,7 +27,7 @@ font-family: 'Chronicle', sans-serif;
 font-weight: 600;
 line-height: 1,43;
 text-align: center;
-color: #1D1E21;
+color:${p=>(p.theme.colors.red)};
 `
 
 export const Text=styled.p`
@@ -84,9 +86,10 @@ position: absolute;
 top: 0;
 left: 0;
 padding: 5px;
-border: 2px solid ${p=>(p.theme.colors.green)};
+border: 2px solid ${p=>(p.theme.colors.red)};
 border-radius: 10px;
-background: ${p => p.$audioPlaying ? p.theme.colors.green : p.theme.colors.yellow};
+background: ${p => p.$audioPlaying ? p.theme.colors.red : p.theme.colors.yellow};
+color: ${p => p.$audioPlaying ? p.theme.colors.white : p.theme.colors.red};
 font-family: 'Rutenia', sans-serif;
 text-align: center;
 

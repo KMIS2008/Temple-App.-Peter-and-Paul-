@@ -35,8 +35,7 @@ const MorningPrayersPages=lazy(()=>import('Pages/MorningPrayersPages/MorningPray
 const EveningPrayerPages=lazy(()=>import('Pages/EveningPrayerPages/EveningPrayerPages'));
 const PrayerForUkranePages=lazy(()=>import('Pages/PrayerForUkranePages/PrayerForUkranePages'));
 const PrayerAllNeedsPage=lazy(()=>import('Pages/PrayerAllNeedsPage/PrayerAllNeedsPage'));
-const PrayerCommunionPage=lazy(()=>import('Pages/PrayerCommunionPage/PrayerCommunionPage'));
-
+const PrayerCommunionPage = lazy(() => import('Pages/PrayerCommunionPage/PrayerCommunionPage'));
 
 // const RegisterPage= lazy(()=> import('Pages/RegisterPage/RegisterPage'));
 // const LoginPage = lazy(()=> import ('Pages/LoginPage/LoginPage'));
@@ -46,14 +45,12 @@ const ErrorPage = lazy(()=> import ('Pages/ErrorPage/ErrorPage'));
     export const App =()=> {
       const dispatch= useDispatch();
  
-
       useEffect(()=>{
         dispatch(addCount())
         dispatch(fetchvisits());
     
       },[dispatch])
-    
-
+  
       // const { isRefreshing } = useAuth();
     
       // useEffect(() => {
@@ -106,7 +103,7 @@ return (
              <Route path='evening-prayer' element={<EveningPrayerPages/>}/>
              <Route path='for-ukraine-prayer' element={<PrayerForUkranePages/>}/>
              <Route path='all-needs' element={<PrayerAllNeedsPage/>}/>
-             <Route path='communion-prayer' element={<PrayerCommunionPage/>}/>
+          <Route path='communion-prayer' element={<PrayerCommunionPage />} />
 
              {/* <Route path='register' element={<RegisterPage/>}/> */}
              {/* <Route path = "login" element ={<RestrictedRoute redirectTo="/" component={<LoginPage/>} />}/> */}

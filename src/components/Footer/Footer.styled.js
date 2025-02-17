@@ -23,7 +23,7 @@ margin-bottom: ${p=>p.theme.spacing(4)};
 font-family: Inter;
 font-size: 18px;
 font-weight: 400;
-line-height: 18px;
+line-height: 1.2;
 text-align: left;
 
 color: ${p=>p.theme.colors.whiteblue};
@@ -34,7 +34,7 @@ margin-bottom: 10px;
 font-family: Inter;
 font-weight: 600;
 font-size: 22px;
-line-height: 18px;
+line-height: 1.2;
 text-align: left;
 text-decoration: underline;
 
@@ -46,7 +46,7 @@ margin-bottom: 10px;
 font-family: Inter;
 font-size: 18px;
 font-weight: 400;
-line-height: 18px;
+line-height: 1.2;
 text-align: left;
 
 color: ${p=>p.theme.colors.whiteblue};
@@ -59,7 +59,7 @@ margin-bottom: 5px;
 font-family: Inter;
 font-size: 22px;
 font-weight: 600;
-line-height: 18px;
+line-height: 1.2;
 text-align: left;
 text-decoration: underline;
 

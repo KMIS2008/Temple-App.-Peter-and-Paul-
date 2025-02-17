@@ -46,7 +46,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                    to="/home"
                    style={{
                       backgroundColor: isHomeActive? 'transparent' : 'white',
-                         color: isHomeActive ? 'white' : '#0047AB',
+                         color: isHomeActive ? 'white' : '#69221d',
                          border: isHomeActive&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                 }}
             > Головна</Button>
@@ -59,7 +59,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                    to="/about-us"
                    style={{
                        backgroundColor: isAboutUsActive ? '#59B17A' : 'white',
-                       color: isAboutUsActive ? 'white' : '#0047AB',
+                       color: isAboutUsActive ? 'white' : '#69221d',
                        border: isAboutUsActive&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
             > Про нас</Button>
@@ -71,7 +71,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                    to="/virtual-tour"
                    style={{
                        backgroundColor: isVirtualTour ? '#59B17A' : 'white',
-                       color: isVirtualTour ? 'white' : '#0047AB',
+                       color: isVirtualTour ? 'white' : '#69221d',
                        border: isVirtualTour&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
             >Віртуальний тур</Button>
@@ -83,7 +83,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                    to="/wedding"
                    style={{
                        backgroundColor: isWedding ? '#59B17A' : 'white',
-                       color: isWedding ? 'white' : '#0047AB',
+                       color: isWedding ? 'white' : '#69221d',
                        border: isWedding&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
             >Вінчання</Button>
@@ -95,7 +95,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                    to="/christening"
                    style={{
                        backgroundColor: isChristening ? '#59B17A' : 'white',
-                       color: isChristening ? 'white' : '#0047AB',
+                       color: isChristening ? 'white' : '#69221d',
                        border: isChristening&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
             >Хрещення</Button>
@@ -107,7 +107,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                    to="/schedule"
                    style={{
                        backgroundColor: isSchedule ? '#59B17A' : 'white',
-                       color: isSchedule ? 'white' : '#0047AB',
+                       color: isSchedule ? 'white' : '#69221d',
                        border: isSchedule&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
             >Богослужіння</Button>
@@ -119,7 +119,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                    to="/prayer"
                    style={{
                        backgroundColor: isPrayer ? '#59B17A' : 'white',
-                       color: isPrayer ? 'white' : '#0047AB',
+                       color: isPrayer ? 'white' : '#69221d',
                        border: isPrayer&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
             >Молитва</Button>
@@ -131,7 +131,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                    to="/donation"
                    style={{
                        backgroundColor: isDonation ? '#59B17A' : 'white',
-                       color: isDonation ? 'white' : '#0047AB',
+                       color: isDonation ? 'white' : '#69221d',
                        border: isDonation&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
             >Пожертва</Button>
@@ -143,7 +143,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                    to="/online-services"
                    style={{
                       backgroundColor: isOnlineServices ? '#59B17A' : 'white',
-                      color: isOnlineServices ? 'white' : '#0047AB',
+                      color: isOnlineServices ? 'white' : '#69221d',
                       border: isOnlineServices&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
             > Онлайн послуги</Button>
@@ -155,7 +155,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                    to="/choir"
                    style={{
                       backgroundColor: isСhoir ? '#59B17A' : 'white',
-                      color: isСhoir ? 'white' : '#0047AB',
+                      color: isСhoir ? 'white' : '#69221d',
                       border: isСhoir&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
             > Хор</Button>
@@ -179,7 +179,7 @@ export const NavigationLinks=({stylefooter=false, isHeader=false, styledisplay=f
                    to="/feedback"
                    style={{
                       backgroundColor: isFeedback ? '#59B17A' : 'white',
-                      color: isFeedback ? 'white' : '#0047AB',
+                      color: isFeedback ? 'white' : '#69221d',
                       border: isFeedback&&!stylefooter ? '4px solid white' : '1.15px solid #F1F1F1',
                    }}
             >Зворотній зв'язок</Button>

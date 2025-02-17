@@ -6,11 +6,6 @@ justify-content: start;
 align-items: center;
 list-style: none;
 gap: 12px;
-margin-top: ${p=>p.theme.spacing(4)};
-
-@media (min-width: 1440px) {
-  margin-top: ${p=>p.theme.spacing(0)};
-}
 `
 
 export const IconContainer = styled.div`
