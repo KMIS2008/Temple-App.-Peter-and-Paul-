@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Contater = styled.div`
 padding: 20px 20px;
-background-color: ${props => (props.theme.colors.green)}; 
+background-color: ${props => (props.theme.colors.red)}; 
 
 @media (min-width: 1440px) {
  
@@ -30,14 +30,15 @@ color: ${p=>p.theme.colors.whiteblue};
 `
 
 export const Title=styled.h6`
-margin-bottom: 5px;
+margin-bottom: 10px;
 font-family: Inter;
+font-weight: 600;
 font-size: 22px;
-font-weight: 400;
 line-height: 18px;
 text-align: left;
+text-decoration: underline;
 
-color: ${p=>p.theme.colors.whiteblue};
+color: ${p=>p.theme.colors.gold};
 `
 
 export const Adress=styled.p`
@@ -53,15 +54,16 @@ color: ${p=>p.theme.colors.whiteblue};
 
 export const LinkAdress=styled.a`
 display: flex;
-gap: 5px;
+gap: 15px;
 margin-bottom: 5px;
 font-family: Inter;
 font-size: 22px;
-font-weight: 400;
+font-weight: 600;
 line-height: 18px;
 text-align: left;
+text-decoration: underline;
 
-color: ${p=>p.theme.colors.whiteblue};
+color: ${p=>p.theme.colors.gold};
 cursor: pointer;
 `
 
@@ -86,7 +88,7 @@ export const CotnainerLinks=styled.div`
 @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     gap:20px;
 }
 `
