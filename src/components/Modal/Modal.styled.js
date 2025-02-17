@@ -37,6 +37,7 @@ font-size: 35px;
 font-weight: 400;
 line-height: 1,1;
 text-align: justify;
+text-indent: 20px;
 color:rgb(4, 75, 28);
 white-space:normal ; /* Allow text to wrap to the next line */
   word-wrap: break-word; /* Ensure long words break to next line */
