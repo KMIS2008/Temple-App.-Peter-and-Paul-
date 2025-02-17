@@ -20,3 +20,8 @@ cursor: pointer;
     text-decoration: underline;
 }
 `
+export const Text=styled.p`
+text-align: justify;
+text-indent: 30px;
+line-height: 1.5;
+`
