@@ -89,7 +89,7 @@ export const CotnainerLinks=styled.div`
     display: flex;
     justify-content: space-between;
     align-items: start;
-    gap:20px;
+    gap:40px;
 }
 `
 export const ContainerSpecial = styled.div`

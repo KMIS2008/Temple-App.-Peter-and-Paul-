@@ -18,6 +18,7 @@ import {Main} from '../../components/Main/Main';
 import { InfoModal } from "components/Modal/Modal";
 import { useEffect, useState } from "react";
 import { Contacts } from "components/Contacts/Contacts";
+import { AudioTittle } from 'components/AudioTittle/AudioTittle';
 
 
 export default function Home(){

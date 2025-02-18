@@ -67,4 +67,5 @@ width: 100px;
 height: 100px;
 background: ${p => p.theme.colors.red};
 border-radius: 10px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 `

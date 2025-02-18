@@ -39,8 +39,8 @@ export const Footer=()=>{
                    rel="noopener noreferrer">
                    Як доїхати
                    <svg width={20} height={20}>
-                  <use xlinkHref={sprite + '#icon-home'} />
-                  </svg> 
+                      <use xlinkHref={sprite + '#icon-home'} />
+                   </svg> 
                </LinkAdress>   
                              
                </div>
