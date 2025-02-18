@@ -8,20 +8,22 @@ import { selectService } from 'redux/services/selects';
 import { selectFeedback } from '../../redux/feedBack/selects';
 import { FaEye, FaEyeSlash, FaPrint  } from 'react-icons/fa'; // Импорт иконок
 import { useLocation } from 'react-router-dom'; // Импорт useLocation
+import { ScheduleOfLoturgi } from 'components/ScheduleOfServices/ScheduleOfServices';
+
 
 export const PasswordCheck = () => {
     const password = useSelector(selectPassword);
     const feedback = useSelector(selectFeedback);
-   
+    const services = useSelector(selectService);
+
 
     const [showPassword, setShowPassword] = useState(false);
     const [passwordValue, setPasswordValue] = useState('');
     const [showFilter, setFilter] = useState('');
     const [showFeedback, setShowFeedback] = useState(false); // Добавлено состояние для отображения feedback
     const [errorMessage, setErrorMessage] = useState(''); 
-
-
-    const services = useSelector(selectService);
+    const [showSchedule, setShowSchedule] = useState(false);
+    
     const dispatch = useDispatch();
     const location = useLocation(); // Получение текущего пути
 
@@ -33,8 +35,9 @@ export const PasswordCheck = () => {
             setErrorMessage('');
             dispatch(checkPassword(passwordValue))
 
-                dispatch(fetchService());
-                dispatch(fetchFeedback());
+            dispatch(fetchService());
+            dispatch(fetchFeedback());
+            setPasswordValue('')
             if (!password.success) {
                 setErrorMessage('Пароль не вірний'); }
     };
@@ -46,6 +49,10 @@ export const PasswordCheck = () => {
 
     const handleShowFeedback = () => {
         setShowFeedback(!showFeedback); // Устанавливаем состояние для отображения feedback
+    };
+
+    const handleShowSchedule = () => {
+        setShowSchedule(!showSchedule); 
     };
 
     const filteredData = services.filter((item) => item.type.trim() === showFilter.trim());
@@ -75,6 +82,7 @@ export const PasswordCheck = () => {
                         {!showPassword ? <FaEyeSlash /> : <FaEye />}
                     </EyeIcon>
                 </PasswordWrapper>
+
                 <ButtonCheck onClick={handleCheckPassword}>Перевірити пароль</ButtonCheck>
 
                 {errorMessage && !password.success &&(
@@ -115,15 +123,21 @@ export const PasswordCheck = () => {
                     </ContainerButton>
                 )}
 
-              {(showFilter || showFeedback) && (
+                {password.success && location.pathname === '/schedule' && (
+                    <ContainerButton>
+                        <ButtonSuccess onClick={handleShowSchedule}>
+                        Розклад богослужінь
+                        </ButtonSuccess>
+                    </ContainerButton>
+                )}
+
+              {(showFilter || showFeedback || showSchedule) && (
                 <div id="printableArea">
                     {showFilter && <AnswerService services={filteredData} />}
                     {showFeedback && feedback && <AnswerService services={feedback} />}
+                    {showSchedule && <ScheduleOfLoturgi />}
                 </div>
                )}
-
-                {/* {showFilter && <AnswerService services={filteredData} />}
-                {showFeedback && feedback && <AnswerService services={feedback} />} */}
 
                 {/* Если пароль введён правильно и отображаются данные, показываем иконку печати */}
         {password.success && (showFilter || showFeedback) && (

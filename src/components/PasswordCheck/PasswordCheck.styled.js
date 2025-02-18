@@ -44,14 +44,15 @@ display: block;
 margin-top: 10px;
 padding: 10px 20px;
 font-size: 16px;
-background-color: #007bff;
+background-color:${p=>p.theme.colors.red};
 color: #fff;
 border: none;
 border-radius: 5px;
 cursor: pointer;
 
 &:hover{
-color: black;
+color: ${p => p.theme.colors.red};
+background-color:white;
 }
 `
 export const ContainerButton=styled.div`

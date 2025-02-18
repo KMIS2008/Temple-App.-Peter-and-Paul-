@@ -35,39 +35,38 @@ useEffect(()=>{
 return (
     <ContainerHome>
    
-        <Tittle  title="Головна"></Tittle>
+        <Tittle  title="Головна"/>
         <Main />
           
         <Link to={'/about-us'}>
-             <Tittle title="Про нас"></Tittle>
+             <Tittle title="Про нас"/>
         </Link>
         <AboutSecond />   
     
         <Link to={'/schedule'}>
-             <Tittle title="Богослужіння"></Tittle>
+             <AudioTittle >Богослужіння</AudioTittle>
         </Link>
         <ServiceHighlighter />
         <SacramentsHome/>
 
         <Link to={'/virtual-tour'}>
-             <Tittle title="Віртуальний тур"></Tittle>
+             <Tittle title="Віртуальний тур"/>
         </Link>
         <VideoPlayer />
     
         <Link to={'/prayer'}>
-             <Tittle title="Молитви"></Tittle>
+             <Tittle title="Молитви"/>
         </Link>
         <Image src={player} alt="player"/>
 
         <Link to={'/donation'}>
-             <Tittle title="Пожертва"></Tittle>
+             <Tittle title="Пожертва"/>
         </Link>
         <PayDonation/>
 
-       <Tittle title="Контакти"></Tittle>
-       <Contacts/>
-        
-
+       <Tittle title="Контакти"/>
+       <Contacts />
+    
         <Views count={count}/>
 
         <InfoModal isModal={isModal} setModal={setModal}/>

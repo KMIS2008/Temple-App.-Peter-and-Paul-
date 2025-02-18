@@ -11,7 +11,8 @@ axios.defaults.baseURL = "https://temple-app-peter-and-paul-backend.onrender.com
 const VISIT_URL='/visits';
 const CHECK_URL='/check-password';
 const SERVICE_URL='/service';
-const FEEDBACK_URL='/feedback';
+const FEEDBACK_URL = '/feedback';
+const SCHEDULE_URL='/schedule';
 
 
 export const fetchvisits = createAsyncThunk('visits', async(_, thunkAPI)=>{
@@ -174,6 +175,55 @@ export const deleteFeedback = createAsyncThunk("feedback/delete", async(_id, thu
         return thunkAPI.rejectWithValue(e.message)
     }
 })
+
+export const addSchedule=createAsyncThunk('schedule/add',  async(data, thunkAPI)=>{
+    try {
+        const response = await axios.post(`${SCHEDULE_URL}`, data);
+    
+        return response.data;
+    } catch (e){
+        toast.error(`Error: ${e.message}`, {
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose: 5000, 
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+        return thunkAPI.rejectWithValue(e.message)
+    }
+}
+)
+
+export const fetchSchedule = createAsyncThunk('schedule', async(_, thunkAPI)=>{
+    try {
+        const response = await axios.get(`${SCHEDULE_URL}`);
+        return response.data;
+        
+    } catch (e){
+        toast.error(`Error: ${e.message}`, {
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose: 5000, 
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+        return thunkAPI.rejectWithValue(e.message)
+    }
+})
+
+export const deleteSchedule = createAsyncThunk("schedule/delete", async(_id, thunkAPI)=>{
+    try {
+        const response = await axios.delete(`${SCHEDULE_URL}/${_id}`);
+        return response.data;
+    } catch (e) {
+        return thunkAPI.rejectWithValue(e.message)
+    }
+})
+
 
 
 
