@@ -52,9 +52,11 @@ export const Footer=()=>{
                 <Title>Дзвоніть:</Title>
                 <Adress>+380-98-273-47-47</Adress>
                </div>
-
-               
-                  <SocialMediaIcons /> 
+                <div>
+               <Title>Соцмережі:</Title>
+                  <SocialMediaIcons />                    
+               </div>
+ 
                 
             </CotnainerLinks>
 
