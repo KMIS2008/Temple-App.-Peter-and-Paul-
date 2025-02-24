@@ -20,6 +20,8 @@ import { useEffect, useState } from "react";
 import { Contacts } from "components/Contacts/Contacts";
 import { AudioTittle } from 'components/AudioTittle/AudioTittle';
 
+import { initHomePage } from 'components/Heart/Heart';
+
 
 export default function Home(){
 
@@ -29,7 +31,8 @@ export default function Home(){
 
 
 useEffect(()=>{
-  setModal(true)
+     setModal(true);
+     initHomePage()
 },[])
 
 return (
