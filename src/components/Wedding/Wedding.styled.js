@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-padding: 40px;
+padding: 0 40px;
 `
 
 export const Title = styled.h4`

@@ -5,7 +5,7 @@ import { Tittle } from 'components/Title/Title';
 export default function ChristeningPage(){
   return(
     <Container>
-      <Tittle title={'Хрещення та Миропомазання '}/>
+      <Tittle title={'Таїнство Хрещення у храмі святих апостолів Петра і Павла'}/>
         <ChristeningMain/>
     </Container>
   )
