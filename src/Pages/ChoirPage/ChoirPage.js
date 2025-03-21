@@ -6,7 +6,7 @@ import choir from '../../images/Choir.jpg';
 export default function ChoirPage(){
     return(
         <Container>
-            <Tittle title={'Хор'}/>
+            <Tittle title={'Церковний хор храму святих апостолів Петра і Павла'}/>
             <Image src={choir} alt="player"/>
            <AboutChoir/>
         </Container>

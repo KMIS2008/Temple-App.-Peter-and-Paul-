@@ -21,13 +21,21 @@ import { Contacts } from "components/Contacts/Contacts";
 import { AudioTittle } from 'components/AudioTittle/AudioTittle';
 
 import { initHomePage } from 'components/Heart/Heart';
+// import { speakTextResponsive } from '../../utils/textToSpeech';
+// import { speakTextVoiceRSS } from '../../utils/vocieRSS';
 
 
 export default function Home(){
 
   const [isModal, setModal]=useState(false)
   
-  const count= useSelector(selectCount);
+     const count = useSelector(selectCount);
+
+//      const text= "ХРАМ – це складна рукотворна святиня, яка у земних формах символічно зображує неземне, у видимих – невидиме. Умовно кожен православний храм поділяється на три основних частини: притвор, середню частину та вівтар. Три частини – символ Триєдиного Бога. Трьохскладова будова храму відома ще з часів Старого Завіту і її дотримуються досі, незалежно від форм та розмірів храму. Вівтар повинен бути орієнтованим на схід, де сходить сонце, це символізує Божественне Світло, рай.";
+
+//      const handleSpeak = () => {
+//                speakTextResponsive(text);      
+//   };
 
 
 useEffect(()=>{
@@ -70,9 +78,13 @@ return (
        <Tittle title="Контакти"/>
        <Contacts />
     
-        <Views count={count}/>
+          <Views count={count} />
+          
+          {/* <button onClick={handleSpeak}>Озвучити текст</button> */}
 
-        <InfoModal isModal={isModal} setModal={setModal}/>
+          <InfoModal isModal={isModal} setModal={setModal} />
+          
+          
 
     </ContainerHome>
 )}
