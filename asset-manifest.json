@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Temple-App.-Peter-and-Paul-/static/css/main.1de94fc9.css",
-    "main.js": "/Temple-App.-Peter-and-Paul-/static/js/main.157807db.js",
+    "main.js": "/Temple-App.-Peter-and-Paul-/static/js/main.f34b5304.js",
     "static/js/430.0a7b9df9.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/430.0a7b9df9.chunk.js",
     "static/js/198.83bf73ca.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/198.83bf73ca.chunk.js",
     "static/js/294.99181779.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/294.99181779.chunk.js",
@@ -10,8 +10,8 @@
     "static/js/808.ff837136.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/808.ff837136.chunk.js",
     "static/js/373.92a6ffb8.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/373.92a6ffb8.chunk.js",
     "static/js/433.b88c1e1d.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/433.b88c1e1d.chunk.js",
-    "static/js/798.bc0c66d6.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/798.bc0c66d6.chunk.js",
-    "static/js/323.71bccba5.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/323.71bccba5.chunk.js",
+    "static/js/798.3d777d6d.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/798.3d777d6d.chunk.js",
+    "static/js/323.d2f88b5d.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/323.d2f88b5d.chunk.js",
     "static/js/673.7f9a5424.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/673.7f9a5424.chunk.js",
     "static/js/940.c21117d0.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/940.c21117d0.chunk.js",
     "static/js/562.39cd5854.chunk.js": "/Temple-App.-Peter-and-Paul-/static/js/562.39cd5854.chunk.js",
@@ -95,7 +95,7 @@
     "index.html": "/Temple-App.-Peter-and-Paul-/index.html",
     "static/media/slick.woff": "/Temple-App.-Peter-and-Paul-/static/media/slick.295183786cd8a1389865.woff",
     "main.1de94fc9.css.map": "/Temple-App.-Peter-and-Paul-/static/css/main.1de94fc9.css.map",
-    "main.157807db.js.map": "/Temple-App.-Peter-and-Paul-/static/js/main.157807db.js.map",
+    "main.f34b5304.js.map": "/Temple-App.-Peter-and-Paul-/static/js/main.f34b5304.js.map",
     "430.0a7b9df9.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/430.0a7b9df9.chunk.js.map",
     "198.83bf73ca.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/198.83bf73ca.chunk.js.map",
     "294.99181779.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/294.99181779.chunk.js.map",
@@ -104,8 +104,8 @@
     "808.ff837136.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/808.ff837136.chunk.js.map",
     "373.92a6ffb8.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/373.92a6ffb8.chunk.js.map",
     "433.b88c1e1d.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/433.b88c1e1d.chunk.js.map",
-    "798.bc0c66d6.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/798.bc0c66d6.chunk.js.map",
-    "323.71bccba5.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/323.71bccba5.chunk.js.map",
+    "798.3d777d6d.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/798.3d777d6d.chunk.js.map",
+    "323.d2f88b5d.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/323.d2f88b5d.chunk.js.map",
     "673.7f9a5424.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/673.7f9a5424.chunk.js.map",
     "940.c21117d0.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/940.c21117d0.chunk.js.map",
     "562.39cd5854.chunk.js.map": "/Temple-App.-Peter-and-Paul-/static/js/562.39cd5854.chunk.js.map",
@@ -142,6 +142,6 @@
   },
   "entrypoints": [
     "static/css/main.1de94fc9.css",
-    "static/js/main.157807db.js"
+    "static/js/main.f34b5304.js"
   ]
 }
