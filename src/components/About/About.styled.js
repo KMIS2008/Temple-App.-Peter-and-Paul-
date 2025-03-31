@@ -12,10 +12,20 @@ margin-bottom: 60px;
 }
 `
 
-export const Title =styled.h2`
+export const Title =styled.h3`
 margin-bottom: 20px;
 margin-top: 20px;
+font-size: 30px;
 text-align: center;
+color:rgb(4, 112, 227);
+`
+
+export const TitleItem = styled.h3`
+margin-bottom: 20px;
+margin-top: 20px;
+font-size: 30px;
+font-weight: 700;
+text-align: left;
 `
 
 export const Text=styled.p`
@@ -61,4 +71,18 @@ margin: 0 auto;
 export const Span=styled.span`
 color: blue;
 text-decoration: underline;
+`
+
+export const SpanText = styled.span`
+margin-right: 2px;
+font-weight: 600;
+`
+
+export const List = styled.ul`
+list-style: none;
+`
+
+export const SVG = styled.svg`
+margin-right: 10px;
+vertical-align: middle;
 `

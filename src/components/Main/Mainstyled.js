@@ -11,10 +11,12 @@ grid-template-columns: 2fr 1fr;
 gap:40px;
 `
 
-export const Title =styled.h2`
+export const Title =styled.h3`
 margin-bottom: 20px;
 margin-top: 20px;
+font-size: 30px;
 text-align: center;
+color:rgb(4, 112, 227);
 `
 
 export const Text=styled.p`
@@ -31,6 +33,37 @@ text-indent: 40px;
 @media (min-width: 1440px) {
     font-size:24px;
 }
+`
+
+export const Line = styled.div`
+margin-top: 20px;
+margin-bottom: 20px;
+width: 100%;
+height: 1px;
+background-color: black;
+`
+
+export const Span = styled.span`
+font-weight: 500;
+font-size: 20px;
+`
+
+export const List = styled.ul`
+margin-bottom: 20px;
+list-style: none;
+padding: 0 40px;
+`
+
+export const Item = styled.li`
+margin-bottom: 5px;
+`
+
+export const TextList = styled.p`
+font-size: 20px;
+`
+
+export const SpanText = styled.span`
+font-weight: 500;
 `
 export const Image = styled.img`
 
