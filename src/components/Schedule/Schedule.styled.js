@@ -36,4 +36,5 @@ export const Svg = styled.svg`
 margin-right: 0;
 margin-left: auto;
 
+cursor: pointer;
 `
