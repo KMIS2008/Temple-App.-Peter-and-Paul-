@@ -65,6 +65,10 @@ text-decoration: underline;
 
 color: ${p=>p.theme.colors.gold};
 cursor: pointer;
+
+&:hover{
+  color: ${p=>p.theme.colors.blueTitle};
+}
 `
 
 export const Line = styled.div`

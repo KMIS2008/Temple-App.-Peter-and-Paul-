@@ -44,6 +44,10 @@ text-decoration: underline;
 
 color: black;
 cursor: pointer;
+
+&:hover{
+  color: ${p=>p.theme.colors.blueTitle};
+}
 `
 
 export const Title = styled.h3`
