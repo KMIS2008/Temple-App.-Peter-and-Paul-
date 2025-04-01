@@ -1,5 +1,4 @@
-import {Container, Title, TitleItem, Text, Image, SpanText, List, SVG} from './About.styled';
-import rector from '../../images/rector.jpg';
+import { Title, TitleItem, Text, SpanText, List, SVG, LinkAuto} from './About.styled';
 import sprite from '../../images/sprite.svg';
 
 
@@ -7,7 +6,7 @@ export function AboutSecond(){
     return(
         <>
         <Title>Парафія святих апостолів Петра і Павла</Title>
-        <Container>
+
                 <div>
                     <Text>
                         Релігійна громада нашої парафії належить до Київської єпархії Православної
@@ -27,13 +26,16 @@ export function AboutSecond(){
                                 <SVG width={20} height={20}>
                                     <use xlinkHref={sprite + '#icon-user'}></use>
                                 </SVG>
-                              <SpanText> Протоієрей Олег</SpanText>
+
+                                <LinkAuto to={'/autobiography'}>
+                                   <SpanText> Протоієрей Олег</SpanText>
+                                </LinkAuto>
                           </Text>
                         </li>
                         <li>
                             <Text>
                                 <SVG width={20} height={20}>
-                                    <use stroke = 'black' xlinkHref={sprite + '#icon-phone'}></use>
+                                    <use xlinkHref={sprite + '#icon-phone'}></use>
                                 </SVG>
                              <SpanText>
                                 Телефон:
@@ -66,10 +68,7 @@ export function AboutSecond(){
                 До настоятеля протоієрея Олега можна звернутися за телефоном  +38 098 273 47 47, або за електронною адресою: <Span> ocu.petropavlivske@gmail.com.</Span>
                 </Text> */}
             </div>
-            
-              <Image src={rector} alt='rector of the church'/>
-
-              </Container>
+    
         </>
     )
 }

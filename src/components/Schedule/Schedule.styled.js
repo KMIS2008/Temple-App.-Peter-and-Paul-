@@ -14,6 +14,7 @@ margin-top: 20px;
 margin-bottom: 20px;
 text-align: center;
 font-size: 30px;
+color: ${p=>p.theme.colors.blueTitle};
 `
 
 export const Item = styled.li`

@@ -1,16 +1,8 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
 
-export const Container=styled.div`
-/* max-width: 1440px; */
-margin-bottom: 60px;
-
-
-@media (min-width: 1440px) {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 30px;
-}
+export const Container = styled.div`
+display: flex;
+flex-direction: 2fr 1fr;
 `
 
 export const Title =styled.h3`
@@ -18,15 +10,6 @@ margin-bottom: 20px;
 margin-top: 20px;
 font-size: 30px;
 text-align: center;
-color:rgb(4, 112, 227);
-`
-
-export const TitleItem = styled.h3`
-margin-bottom: 20px;
-margin-top: 20px;
-font-size: 30px;
-font-weight: 700;
-text-align: left;
 `
 
 export const Text=styled.p`
@@ -44,9 +27,10 @@ text-indent: 40px;
     font-size:24px;
 }
 `
+
 export const Image = styled.img`
 margin: 0 auto;
-/* margin-bottom: 30px; */
+margin-left: 20px;
   max-width: auto;
   max-height: 450px;
   border-radius: 8px; /* Опционально, добавляет закругленные углы */
@@ -68,31 +52,3 @@ margin: 0 auto;
     }
   }
 `;
-
-export const Span=styled.span`
-color: blue;
-text-decoration: underline;
-`
-
-export const SpanText = styled.span`
-margin-right: 2px;
-font-weight: 600;
-`
-
-export const List = styled.ul`
-list-style: none;
-`
-
-export const SVG = styled.svg`
-margin-right: 10px;
-vertical-align: middle;
-`
-
-export const LinkAuto = styled(Link)`
-color: black;
-
-&:hover{
-  text-decoration: underline;
-  color: blue;
-}
-`
