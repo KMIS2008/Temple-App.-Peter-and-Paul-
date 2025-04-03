@@ -1,4 +1,4 @@
-import { Title, TitleItem, Text, SpanText, List, SVG, LinkAuto} from './About.styled';
+import { Title, TitleItem, Text, SpanText, List, SVG} from './About.styled';
 import sprite from '../../images/sprite.svg';
 
 
@@ -26,10 +26,7 @@ export function AboutSecond(){
                                 <SVG width={20} height={20}>
                                     <use xlinkHref={sprite + '#icon-user'}></use>
                                 </SVG>
-
-                                <LinkAuto to={'/autobiography'}>
                                    <SpanText> Протоієрей Олег</SpanText>
-                                </LinkAuto>
                           </Text>
                         </li>
                         <li>

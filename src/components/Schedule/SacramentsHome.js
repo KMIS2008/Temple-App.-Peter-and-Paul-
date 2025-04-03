@@ -1,5 +1,5 @@
 import {Container} from './Schedule.styled';
-import {TitleChapter} from './Schedule.styled';
+import {TitleChapter, Text} from './Schedule.styled';
 
 
 export const SacramentsHome = () => {
@@ -9,13 +9,13 @@ export const SacramentsHome = () => {
 
       <TitleChapter>Церковні таїнства. </TitleChapter>
 
-      <p>
+      <Text>
       В Храмі апостолів Петра і Павла здійснюються усі духовні потреби віруючих.
-      </p>
+      </Text>
     
-      <p>
+      <Text>
       Для запису і отримання довідок будь ласка звертайтеся до протоієрея Олега Олексюка за телефоном +38 098 273 47 47.
-      </p>
+      </Text>
 
     </Container>
   );

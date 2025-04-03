@@ -89,7 +89,7 @@ vertical-align: middle;
 `
 
 export const LinkAuto = styled(Link)`
-color: black;
+color: blue;
 
 &:hover{
   text-decoration: underline;
