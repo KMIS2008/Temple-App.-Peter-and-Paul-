@@ -196,9 +196,6 @@ export const PrayerDiscription=()=>{
                 <SpanFill>«Моліться без перестанку!»</SpanFill> (1 Солунян 5:17)
             </Text>
 
-            
-
-
 
 {/* 
             <Text>

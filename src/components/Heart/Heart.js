@@ -93,5 +93,5 @@ export function initSideWays() {
   // Останавливаем генерацию голубей через 30 секунд (можно настроить по необходимости)
   setTimeout(() => {
     clearInterval(doveInterval);
-  }, 30000);
+  }, 15000);
 }
