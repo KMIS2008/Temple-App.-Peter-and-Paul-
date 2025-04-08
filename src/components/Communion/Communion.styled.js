@@ -1,18 +1,17 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
-export const Span=styled.p`
-margin-top: 10px;
-margin-bottom: 10px;
-font-style: italic;
+
+export const List = styled.ul`
+margin-bottom: 30px;
+padding-left: 20px;
 `
 
-export const TitlePart=styled.h4`
-margin-top: 20px;
+export const Title = styled(Link)`
+display: block;
+margin: 0 auto;
 margin-bottom: 10px;
-`
-
-export const Title = styled.h3`
-text-align: center;
+color: ${p=>p.theme.colors.blue};
 
 cursor: pointer;
 

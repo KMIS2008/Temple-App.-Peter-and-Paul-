@@ -1,4 +1,4 @@
-import { Span, TitlePart, SpanText, Text} from "./EveningPrayers.styled"
+import {Span, TitlePart, SpanText, Text} from "./EveningPrayers.styled"
 
 export const EveningPrayers=()=>{
     return(

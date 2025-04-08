@@ -9,6 +9,7 @@ import {useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import SharedLayout from './SharedLayout/SharedLayout';
+
 // import { useAuth } from 'hook/useAuth';
 // import { refreshUser } from 'redux/auth/operations';
 // import { RestrictedRoute } from './RestrictedRoute'; 
@@ -37,6 +38,10 @@ const PrayerForUkranePages=lazy(()=>import('Pages/PrayerForUkranePages/PrayerFor
 const PrayerAllNeedsPage=lazy(()=>import('Pages/PrayerAllNeedsPage/PrayerAllNeedsPage'));
 const PrayerCommunionPage = lazy(() => import('Pages/PrayerCommunionPage/PrayerCommunionPage'));
 const AutobiographyPage = lazy(() => import('Pages/AutobiographyPage/AutobiographyPage'));
+const EveningRules = lazy(() => import('Pages/EveningRules/EveningRules'));
+const Following = lazy(() => import('Pages/Following/Following'));
+const BeforCommunion = lazy(() => import('Pages/BeforCommunion/BeforCommunion'));
+const AfterCommunion= lazy(() => import('Pages/AfterCommunion/AfterCommunion'));
 
 // const RegisterPage= lazy(()=> import('Pages/RegisterPage/RegisterPage'));
 // const LoginPage = lazy(()=> import ('Pages/LoginPage/LoginPage'));
@@ -104,7 +109,13 @@ return (
              <Route path='evening-prayer' element={<EveningPrayerPages/>}/>
              <Route path='for-ukraine-prayer' element={<PrayerForUkranePages/>}/>
              <Route path='all-needs' element={<PrayerAllNeedsPage/>}/>
-             <Route path='communion-prayer' element={<PrayerCommunionPage />}/>
+             <Route path='communion-prayer' element={<PrayerCommunionPage />}>
+                 <Route path='evening-rules' element={<EveningRules />} />
+                 <Route path='following' element={<Following />} />
+                 <Route path='befor' element={<BeforCommunion />} />
+                 <Route path='after' element={<AfterCommunion />}/>
+             </Route>
+  
              <Route path='autobiography' element={<AutobiographyPage/>}/>
 
              {/* <Route path='register' element={<RegisterPage/>}/> */}
